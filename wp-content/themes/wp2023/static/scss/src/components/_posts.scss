@@ -1,0 +1,142 @@
+.post {
+	margin-bottom: 80px;
+	display: block;
+
+	.entry {
+		display: flex;
+		flex-direction: column;
+		line-height: 150%;
+		font-family: Inter;
+		font-size: 1rem;
+		text-align: justify;
+
+		ul {
+			li {
+				margin: 15px;
+				list-style-type: disc; /* Nastavuje kroužky */
+			}
+		}
+
+		ol {
+			li {
+				margin: 15px;
+				list-style-type: decimal; /* Nastavuje čísla */
+			}
+		}
+	}
+
+
+	@media only screen and (max-width: $tablet-breakpoint) {
+		margin-bottom: 20px;
+	}
+
+	img {
+		max-width: 100%;
+		height: unset;
+	}
+}
+
+.post-img {
+	overflow: hidden;
+	border-radius: 20px;
+	margin-bottom: 40px;
+}
+
+.post-main {
+	display: flex;
+	gap: 64px;
+	flex-direction: column;
+	line-height: 1.5;
+
+	@media only screen and (min-width: $desktop-breakpoint) {
+		flex-direction: row;
+		gap: 32px;
+	}
+
+	h2 {
+		margin: 2rem 0 .75rem;
+	}
+
+	h3 {
+		margin: 1.75rem 0 .75rem;
+	}
+
+	h4,
+	h5,
+	h6 {
+		margin: 1.5rem 0 .75rem;
+	}
+
+	p,
+	p + * {
+		margin-bottom: 1rem;
+	}
+
+	img {
+		margin-bottom: 1rem;
+		border-radius: 10px;
+	}
+}
+
+.post-info {
+	flex: 0 0 200px;
+	order: 2;
+
+	@media only screen and (min-width: $desktop-breakpoint) {
+		order: 1;
+	}
+}
+
+.post-detail {
+	flex: 0 1 100%;
+	order: 1;
+
+	@media only screen and (min-width: $desktop-breakpoint) {
+		order: 2;
+	}
+}
+
+.post-additional {
+	flex: 0 0 260px;
+	order: 3;
+	display: block;
+	@media only screen and (max-width: $tablet-breakpoint) {
+		display: none;
+	}
+}
+
+
+.posts-related {
+	.item {
+		padding-bottom: 10px;
+		margin-bottom: 20px;
+		border-bottom: 1px solid #EAECF0;
+	}
+
+	.img {
+		margin-bottom: 10px;
+
+		img {
+			border-radius: 10px;
+			width: 100%;
+		}
+	}
+
+	.text {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+
+		a {
+			color: #000;
+			text-decoration: none;
+		}
+	}
+
+	.post-meta {
+		color: #98A2B3;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 20px;
+	}
+}

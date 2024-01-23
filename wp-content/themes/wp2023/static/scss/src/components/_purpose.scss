@@ -1,0 +1,40 @@
+.purpose{
+  .item-list{
+    align-items: stretch;
+    row-gap: 40px;
+    .item{
+      .item-inner{
+        background-color: white;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        border-radius: 20px;
+        border: 1px solid #D0D5DD;
+        height: 100%;
+        .img{
+          width: 100%;
+          display: flex;
+          gap:20px;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          svg{
+            width: 64px;
+            height: 64px;
+          }
+          h3{
+            color: #000;
+            text-align: center;
+            font-family: Sora;
+            font-size: 1.1rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+          }
+        }
+      }
+    }
+  }
+}

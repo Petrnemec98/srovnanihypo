@@ -1,0 +1,36 @@
+.thank-you{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .teaser-hp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    background-color: transparent;
+  }
+  .teaser-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    .desc{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+    }
+  }
+  .social-nav{
+    ul{
+      display: flex;
+      gap: 25px;
+      li{
+        svg{
+          width: 55px;
+          height: 55px;
+        }
+      }
+    }
+  }
+}

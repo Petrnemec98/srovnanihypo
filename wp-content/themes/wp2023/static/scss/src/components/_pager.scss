@@ -1,0 +1,39 @@
+.pager {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  margin-top: 60px;
+  border-top: 1px solid var(--gray-200, #EAECF0);
+
+  .wp-pagenavi {
+    display: flex;
+    align-items: flex-start;
+    gap: 2px;
+  }
+
+  .page,
+  .current,
+  .nextpostslink,
+  .previouspostslink {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+
+    color: #1D2939;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-decoration: none;
+  }
+
+  .page {
+
+  }
+
+  .current {
+    background-color: #F9FAFB;
+  }
+}

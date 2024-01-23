@@ -1,0 +1,1 @@
+<? wp_redirect(get_permalink(2),'301'); ?>	

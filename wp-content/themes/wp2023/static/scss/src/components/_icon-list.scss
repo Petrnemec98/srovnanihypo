@@ -1,0 +1,52 @@
+.icon-list{
+  .item-list{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap:20px;
+    @media only screen and (min-width: $desktop-breakpoint) {
+      gap: 50px;
+    }
+
+    .item{
+      display: flex;
+      align-items: center;
+      max-width: 40%;
+      @media only screen and (min-width: $tablet-breakpoint) {
+        max-width: 35%;
+      }
+      @media only screen and (min-width: $desktop-breakpoint) {
+        max-width: 15%;
+      }
+      .item-inner{
+        text-align: center;
+        .icon{
+          @media only screen and (min-width: $desktop-breakpoint) {
+            width: 100%;
+          }
+        }
+        .text{
+          color: #000;
+          font-family: Inter;
+          font-size: 0.8rem;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+        .icon{
+          max-width: 35px;
+          height: 35px;
+          @media only screen and (min-width: $desktop-breakpoint) {
+            min-width: 54px;
+            height: 54px;
+            use{
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

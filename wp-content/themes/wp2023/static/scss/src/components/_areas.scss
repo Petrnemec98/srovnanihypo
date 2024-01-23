@@ -1,0 +1,42 @@
+.areas{
+  .row{
+    row-gap: 50px;
+  }
+  img{
+    width: 100%;
+
+  }
+  .area-address{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    .head{
+      color: var(--base-black, #000);
+      font-family: Inter;
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 150%;
+    }
+    ul{
+      display: flex;
+      gap: 10px;
+      .adress-detail{
+        color: var(--base-black, #000);
+        font-family: Sora;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+    }
+    .desc{
+      color: var(--gray-700, #344054);
+      font-family: Inter;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px; /* 142.857% */
+    }
+  }
+}

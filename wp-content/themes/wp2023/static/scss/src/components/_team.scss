@@ -1,0 +1,33 @@
+.team{
+  .item-list{
+    gap: 20px;
+    justify-content: center;
+    .item{
+      .item-inner{
+        display: flex;
+        background: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        gap:15px;
+        .img{
+          height: 24px;
+          width: 24px;
+          svg{
+            height: 100%;
+            width: 100%;
+          }
+        }
+        .text{
+          font-size: 1.2rem;
+          color: #475467;
+          line-height: 150%;
+          font-weight: 600;
+          font-family: Inter;
+        }
+      }
+    }
+  }
+  .foot{
+    margin-top: 20px;
+  }
+}

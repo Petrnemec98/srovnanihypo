@@ -1,0 +1,42 @@
+.usp{
+  .item-list{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    row-gap: 40px;
+  }
+
+  .item-inner{
+    background: white;
+    border-radius: 20px;
+    height: 100%;
+    img{
+      width: 100%;
+      object-fit: cover;
+      height: 180px;
+      border-radius: 20px 20px 0px 0px;
+    }
+    .text{
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      .head{
+        color: #000;
+        font-family: Sora;
+        font-size: 1.1rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+      .desc{
+        color: var(--gray-500, #667085);
+        font-family: Inter;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+    }
+  }
+}

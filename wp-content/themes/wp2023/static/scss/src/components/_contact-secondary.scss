@@ -1,0 +1,69 @@
+.contact-secondary{
+  background-color: white;
+  padding: 40px;
+  .contact{
+    .row{
+      justify-content: space-between;
+      .col-lg-4{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        .contact-item{
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          .head{
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: left;
+          }
+
+          .item-inner{
+            background-color: $primary-bg-green;
+
+            padding: 15px;
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 25px;
+            align-items: center;
+            .text{
+              font-size: 1rem;
+              font-weight: 600;
+              text-align: left;
+              font-family: Inter;
+              a{
+                color: black;
+                text-decoration: none;
+              }
+            }
+            .img{
+              svg{
+                height: 54px;
+                width: 54px;
+              }
+            }
+
+          }
+          .desc{
+            font-size: 0.7rem;
+            font-weight: 400;
+            font-family: Inter;
+            color:#344054;
+          }
+        }
+      }
+    }
+  }
+.smap-wrap{
+  .smap{
+    height: 368px!important;
+    border-radius: 20px;
+    width: 100%;
+  }
+}
+
+}
+
+.why-contact{
+  margin-top: 60px;
+}

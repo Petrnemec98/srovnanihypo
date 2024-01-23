@@ -1,0 +1,50 @@
+.realizace {
+  .row{
+    width: 100%;
+    margin: auto;
+  }
+
+  .suphead {
+    background-color: white;
+    font-size: 0.8rem;
+    line-height: 150%;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: #475467;
+    width: fit-content;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .head {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    h2 {
+      font-size: 2rem;
+    }
+  }
+  .desc{
+    color: var(--base-black, #000);
+    font-family: Inter;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 30px */
+  }
+
+  .post-gallery{
+    .item-list{
+      row-gap: 30px;
+    }
+    img{
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+    }
+  }
+}

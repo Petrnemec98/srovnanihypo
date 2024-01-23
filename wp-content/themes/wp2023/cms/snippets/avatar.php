@@ -1,0 +1,1 @@
+<img data-src="<?=get_template_directory_uri(); ?>/static/images/avatar.jpg" alt="" class="lazyload">

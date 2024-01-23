@@ -1,0 +1,81 @@
+.button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  transition: $transition-speed;
+
+  &.orange {
+	background-color: $button-orange;
+	&:hover{
+	  background-color: $button-secondary-orange;
+	}
+  }
+
+  &.green{
+    background: #7FDAD1;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    &:hover{
+      background: #BFF2EE;
+    }
+  }
+
+  &.white{
+    background: white;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    border:1px solid var(--gray-300, #D0D5DD);
+    &:hover{
+      background:#D0D5DD;
+    }
+  }
+
+  &.gap-button{
+    gap: 15px;
+  }
+
+  &.normal-size {
+	padding: 16px 28px;
+	border-radius: 8px;
+	border: none;
+  }
+
+  .button__text {
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 0.875rem;
+	line-height: 24px;
+	color: black;
+
+	&.icon-right {
+	  padding-right: 12px;
+	}
+
+	&.icon-left {
+	  padding-left: 12px;
+	}
+  }
+}
+
+  .button-contact-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .btn{
+      padding: 16px 28px;
+      border-radius: 8px;
+      font-weight: 600;
+      border: none;
+      background: #7FDAD1;
+      box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+      transition: $transition-speed;
+      &:hover{
+        background: #BFF2EE;
+      }
+    }
+    .wpcf7-spinner{
+      margin: 0px;
+      position: ab
+    }
+  }
+
+

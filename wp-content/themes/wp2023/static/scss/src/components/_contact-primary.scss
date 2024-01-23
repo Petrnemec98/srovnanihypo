@@ -1,0 +1,63 @@
+.main-wrap{
+  position: relative;
+}
+
+.contact-primary{
+
+  .contact-item{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width:692px;
+    .head{
+      text-align: left;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    .desc{
+      font-size: 1rem;
+      font-weight: 600;
+      text-align: left;
+    }
+    .item-inner{
+      display: flex;
+      background-color: white;
+      align-items: center;
+      padding: 15px;
+      gap: 15px;
+      width: fit-content;
+      @media only screen and (max-width: $desktop-breakpoint) {
+        width: 100%;
+      }
+
+      .img{
+        width: 54px;
+        svg{
+          width: 54px;
+          height: 54px;
+        }
+      }
+      .text{
+        text-align: left;
+        a{
+          font-weight: 600;
+          font-size: 1rem;
+          color:black;
+        }
+        .small{
+          font-size: 0.8rem;
+          font-weight: 400;
+        }
+      }
+    }
+
+
+  }
+  .box-contact{
+    margin-top: 0px;
+  }
+}
+
+.gap-contact{
+  row-gap: 40px;
+}

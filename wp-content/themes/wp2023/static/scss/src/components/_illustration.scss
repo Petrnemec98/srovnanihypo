@@ -1,0 +1,23 @@
+.contact-illustration{
+  display: none;
+  @media only screen and (min-width: $illustration-breakpoint) {
+    display: block;
+    position: absolute;
+    bottom: -15px;
+    left: 20%;
+  }
+  img{
+
+  }
+}
+
+.faq-illustration{
+  display: none;
+  @media only screen and (min-width: $tablet-breakpoint) {
+    display: block;
+  }
+  img{
+    width: 100%;
+  }
+}
+

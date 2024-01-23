@@ -1,0 +1,42 @@
+.contact-form{
+  .wpcf7-file{
+    width: 100%;
+  }
+  .img-head{
+    margin: auto;
+    justify-content: center;
+    display: flex;
+  }
+  &.btn{
+
+  }
+  .intro{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    font-family: Inter;
+    font-size: 0.9rem;
+    font-weight: 400;
+    a{
+      color: #7FDAD1;
+    }
+    .button__text{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      .icon{
+        max-height: 24px;
+        max-width: 24px;
+      }
+    }
+  }
+}
+
+.block {
+  &.alt{
+    width: 100%;
+    background-color: white;
+  }
+}
