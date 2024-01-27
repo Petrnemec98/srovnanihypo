@@ -1,36 +1,16 @@
-<?
-/**
- * Template Name: O nás
- */
+<?php
+/* Template Name: O nás - coffee digital*/
+get_header();
+?>
 
-get_header(); ?>
-	<div class="content">
-		<div class="teaser-career">
-			<div class="teaser-text">
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<div class="teaser-content">
-								<div class="section-head">
-									<h1><? the_title(); ?></h1>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="teaser-img">
-				<img src="<?=get_template_directory_uri();?>/static/images/teaser-services.jpg" alt="">
-			</div>
-		</div>
-		<div class="block">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
+    <!--Demo -->
+    <h1><?=get_field('nadpis');?></h1>
+    <h2><?=get_field('pod-nadpis');?></h2>
+    <div class="intro">
+        <?=get_field('perex');?>
+    </div>
 
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-<? get_footer(); ?>
+
+<?php
+get_footer();
+?>

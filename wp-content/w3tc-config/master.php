@@ -288,7 +288,7 @@
         "utm_source",
         "utm_term"
     ],
-    "pgcache.migrated.qsexempts": 1706046834,
+    "pgcache.migrated.qsexempts": 1706363974,
     "pgcache.late_init": false,
     "pgcache.late_caching": false,
     "pgcache.mirrors.enabled": false,
@@ -1024,11 +1024,9 @@
     "timelimit.cdn_test": 300,
     "timelimit.domain_rename": 120,
     "timelimit.minify_recommendations": 600,
-    "common.instance_id": 1493276106,
+    "common.instance_id": 0,
     "common.force_master": true,
-    "extensions.active": {
-        "fragmentcache": "w3-total-cache\/Extension_FragmentCache_Plugin.php"
-    },
+    "extensions.active": [],
     "extensions.active_frontend": [],
     "extensions.active_dropin": [],
     "plugin.license_key": "",
@@ -1042,9 +1040,5 @@
     "imageservice.configuration_overloaded": true,
     "fragmentcache": {
         "engine": "file"
-    },
-    "pgcache.bad_behavior_path": "",
-    "newrelic": {
-        "monitoring_type": "apm"
     }
 }

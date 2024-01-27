@@ -1,5 +1,16 @@
-<?
-/**
- * Template Name: Kariéra
- */
-wp_redirect(get_post_type_archive_link('kariera'),'301'); ?>
+<?php
+/* Template Name: Kariéra - coffee digital*/
+get_header();
+?>
+
+<!--Demo -->
+<h1><?=get_field('nadpis');?></h1>
+<h2><?=get_field('pod-nadpis');?></h2>
+<div class="intro">
+    <?=get_field('perex');?>
+</div>
+
+
+<?php
+get_footer();
+?>
