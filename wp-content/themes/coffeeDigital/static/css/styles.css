@@ -8,6 +8,8 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 @-ms-viewport {
 	width: device-width;
 }
@@ -2059,11 +2061,108 @@ html {
 }
 
 /*helpers*/
-/**
- * Colors
- */
-/**
-/* Font weight variables
- */
+/*Fonts*/
+/* Transition*/
+/*Colors*/
+/*Radius*/
+/*Fonts*/
+* {
+	font-family: "Nunito Sans", sans-serif;
+}
+
+/*Grid*/
+.container {
+	display: flex;
+}
+
+/*Backgrounds*/
+.bg-primary {
+	background-color: linear-gradient(135deg, #391E68 0%, #150043 100%);
+}
+
+.bg-yellow {
+	background-color: #FFD500;
+	opacity: 0.85;
+}
+
+.bg-light {
+	background-color: #FFF;
+}
+
+.bg-dark {
+	background-color: #0B001E;
+}
+
+/*Border & Radius*/
+.border-primary {
+	stroke: #D54D51;
+	stroke-width: 6px;
+}
+
+.border-light {
+	stroke: #C4C4C4;
+	stroke-width: 2px;
+}
+
+/*btn*/
+.btn {
+	border-radius: 20px;
+	text-align: center;
+	font-weight: 800;
+	font-size: 1rem;
+	padding: 10px 20px;
+	max-width: 200px;
+	transition: all 0.3s ease-out;
+	text-decoration: none;
+}
+
+.btn.large {
+	padding: 20px 20px;
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+
+.btn.primary {
+	background-color: #FFD500;
+	color: black;
+}
+
+.btn.primary:hover {
+	background-color: #FFC400FF;
+}
+
+.btn.secondary {
+	background-color: #251248;
+	color: white;
+}
+
+.btn.secondary:hover {
+	background-color: #1c132d;
+}
+
+.btn.dark {
+	background-color: #0B001E;
+	color: white;
+}
+
+.btn.dark:hover {
+	background-color: #C4C4C4;
+	color: black;
+}
+
+.btn.light {
+	background-color: none;
+	border: solid 2px #0B001E;
+	color: black;
+}
+
+.btn.light:hover {
+	border: #D54D51 2px solid;
+}
+
+/*Fonts*/
+/* Transition*/
+/*Colors*/
+/*Radius*/
 
 /*# sourceMappingURL=styles.css.map */

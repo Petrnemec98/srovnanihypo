@@ -1,0 +1,87 @@
+@import "variables";
+/*Fonts*/
+*{
+  font-family: "Nunito Sans", sans-serif;
+}
+
+/*Grid*/
+.container{
+  display: flex;
+}
+
+
+/*Backgrounds*/
+.bg-primary{
+  background-color: $background-color;
+}
+.bg-yellow{
+  background-color: $yellow-color;
+  opacity: 0.85;
+}
+.bg-light{
+  background-color: $light-color;
+}
+.bg-dark{
+  background-color: $dark-color;
+}
+
+/*Border & Radius*/
+.border-primary{
+  stroke: $secondary-color;
+  stroke-width: 6px;
+}
+.border-light{
+  stroke: $gray-color;
+  stroke-width: 2px;
+}
+
+/*btn*/
+.btn{
+  border-radius: $radius-btn;
+  text-align: center;
+  font-weight:  800 ;
+  font-size: 1rem;
+
+  padding: 10px 20px;
+  max-width: 200px;
+  transition: $transition-slower;
+  text-decoration: none;
+
+  &.large{
+    padding: 20px 20px;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  &.primary{
+    background-color: $btn-primary-color;
+    color: black;
+    &:hover{
+      background-color: $btn-primary-color-hover;
+    }
+  }
+  &.secondary{
+    background-color: $btn-secondary-color;
+    color: white;
+    &:hover{
+      background-color: $btn-secondary-color-hover;
+    }
+  }
+  &.dark{
+    background-color: $dark-color;
+    color: white;
+    &:hover{
+      background-color: $gray-color;
+      color: black;
+    }
+  }
+  &.light{
+    background-color: none;
+    border: solid 2px $dark-color;
+    color: black;
+    &:hover{
+     border: $secondary-color 2px solid;
+    }
+  }
+}
+

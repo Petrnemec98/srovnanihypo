@@ -1,0 +1,26 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+/* Transition*/
+$transition:         all .2s cubic-bezier( .4, 0, .2, 1);
+$transition-slower:  all .3s ease-out;
+
+/*Colors*/
+  //Buttons
+  $btn-primary-color: #FFD500;
+  $btn-primary-color-hover: #FFC400FF;
+  $btn-secondary-color: #251248;
+  $btn-secondary-color-hover: #1c132d;
+
+  //Page
+  $primary-color: #221244;
+  $background-color: linear-gradient(135deg, #391E68 0%, #150043 100%);
+  $secondary-color: #D54D51;
+  $yellow-color:#FFD500;
+  $light-color: #FFF;;
+  $dark-color: #0B001E;
+  $gray-color: #C4C4C4;;
+
+/*Radius*/
+  $radius-btn-larger: 40px;
+  $radius-btn: 20px;

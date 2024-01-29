@@ -26,7 +26,7 @@
         <meta name="theme-color" content="#ffffff">
 
         <!-- CSS -->
-        <link rel="stylesheet" type="text/css" href="<?= get_template_directory_uri(); ?>/static/css/styles.css?v=1.1">
+        <link rel="stylesheet" type="text/css" href="<?= get_template_directory_uri(); ?>/static/css/styles.css">
 
 
 
