@@ -1,0 +1,73 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+  // Základní proměnné pro písma
+  :root {
+    //Fonts
+    --font-primary: "Nunito Sans", sans-serif;
+
+    //sizes
+    --font-size-primary: 1rem; // 16px
+    --font-size-small: 0.8rem;
+    --font-size-large: 2rem;
+    --line-height-base: 1.5;
+
+
+    //colors
+    --text-color-primary:#221244;
+    --text-color-light:white;
+    --text-color-gray:#747474;
+    --text-color-dark:balck;
+    --text-color-red:#D54D51;
+    --tex-color-hover:#7F170EFF;
+  }
+
+  /*Fonts*/
+  *{
+    font-family: var(--font-primary);
+    font-size: var(--font-size-primary);
+    line-height: var(--line-height-base);
+    color: var(--text-color-primary);
+  }
+
+
+  // H1-H6 stylizace
+  h1, h2, h3 {
+    color: var(--text-color-primary);
+
+    &.light {
+      color: var(--text-color-light);
+    }
+  }
+
+  h1 {
+    font-size: 2.625rem; // 40px
+    &.large{
+      font-size: 3rem; //52px
+    }
+  }
+
+  h2 {
+    font-size: 2.5rem; // 40px
+  }
+
+  h3 {
+    font-size: 2rem; // 32px
+  }
+
+  // Stylizace pro paragrafy
+  p {
+    font-size: var(--font-size-primary);
+    line-height: var(--line-height-base);
+    color: var(--text-color-primary);
+  }
+
+  // Stylizace odkazů
+  a {
+    color: var(--text-color-red);
+    text-decoration: none;
+    transition: var(--transition);
+
+    &:hover {
+      color: var(--text-color-hover);
+    }
+  }

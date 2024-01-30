@@ -1,4 +1,4 @@
-<?
+<?php
 
 function wp_setup() {
 	// This theme styles the visual editor with editor-style.css to match the theme style.

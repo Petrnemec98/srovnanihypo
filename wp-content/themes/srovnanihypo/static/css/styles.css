@@ -9,7 +9,6 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 @-ms-viewport {
 	width: device-width;
 }
@@ -2061,58 +2060,71 @@ html {
 }
 
 /*helpers*/
-/*Fonts*/
-/* Transition*/
-/*Colors*/
-/*Radius*/
-/*Fonts*/
-* {
-	font-family: "Nunito Sans", sans-serif;
-}
-
-/*Grid*/
-.container {
-	display: flex;
+:root {
+	/*Colors*/
+	--btn-primary-color: #FFD500;
+	--btn-primary-color-hover: #ffc400;
+	--btn-secondary-color: #251248;
+	--btn-secondary-color-hover: #1c132d;
+	--primary-color: #221244;
+	--background-color: linear-gradient(135deg, #391E68 0%, #150043 100%);
+	--secondary-color: #D54D51;
+	--yellow-color:#FFD500;
+	--light-color: #FFF;
+	--dark-color: #0B001E;
+	--gray-color: #C4C4C4;
+	/* Transition*/
+	--transition:         all .2s cubic-bezier( .4, 0, .2, 1);
+	--transition-slower:  all .3s ease-out;
+	/*Radius*/
+	--radius-btn-large: 40px;
+	--radius-btn: 20px;
+	/*Breakpoints*/
+	--breakpoint-xs: 576px;
+	--breakpoint-sm: 576px;
+	--breakpoint-md: 768px;
+	--breakpoint-lg: 992px;
+	--breakpoint-xl: 1200px;
 }
 
 /*Backgrounds*/
 .bg-primary {
-	background-color: linear-gradient(135deg, #391E68 0%, #150043 100%);
+	background-color: var(--background-color);
 }
 
 .bg-yellow {
-	background-color: #FFD500;
+	background-color: var(--yellow-color);
 	opacity: 0.85;
 }
 
 .bg-light {
-	background-color: #FFF;
+	background-color: var(--light-color);
 }
 
 .bg-dark {
-	background-color: #0B001E;
+	background-color: var(--dark-color);
 }
 
 /*Border & Radius*/
 .border-primary {
-	stroke: #D54D51;
+	stroke: var(--secondary-color);
 	stroke-width: 6px;
 }
 
 .border-light {
-	stroke: #C4C4C4;
+	stroke: var(--gray-color);
 	stroke-width: 2px;
 }
 
 /*btn*/
 .btn {
-	border-radius: 20px;
+	border-radius: var(--radius-btn);
 	text-align: center;
 	font-weight: 800;
 	font-size: 1rem;
 	padding: 10px 20px;
 	max-width: 200px;
-	transition: all 0.3s ease-out;
+	transition: var(--transition-slower);
 	text-decoration: none;
 }
 
@@ -2120,49 +2132,112 @@ html {
 	padding: 20px 20px;
 	font-size: 1.2rem;
 	font-weight: 400;
+	border-radius: var(--radius-btn-large);
 }
 
 .btn.primary {
-	background-color: #FFD500;
+	background-color: var(--btn-primary-color);
 	color: black;
 }
 
 .btn.primary:hover {
-	background-color: #FFC400FF;
+	background-color: var(--btn-primary-color-hover);
 }
 
 .btn.secondary {
-	background-color: #251248;
+	background-color: var(--btn-secondary-color);
 	color: white;
 }
 
 .btn.secondary:hover {
-	background-color: #1c132d;
+	background-color: var(--btn-secondary-color-hover);
 }
 
 .btn.dark {
-	background-color: #0B001E;
+	background-color: var(--dark-color);
 	color: white;
 }
 
 .btn.dark:hover {
-	background-color: #C4C4C4;
+	background-color: var(--gray-color);
 	color: black;
 }
 
 .btn.light {
-	background-color: none;
-	border: solid 2px #0B001E;
+	background-color: unset;
+	border: solid 2px var(--dark-color);
 	color: black;
 }
 
 .btn.light:hover {
-	border: #D54D51 2px solid;
+	border: var(--secondary-color) 2px solid;
+}
+
+.container {
+	display: flex;
 }
 
 /*Fonts*/
-/* Transition*/
-/*Colors*/
-/*Radius*/
+:root {
+	--font-primary: "Nunito Sans", sans-serif;
+	--font-size-primary: 1rem;
+	--font-size-small: 0.8rem;
+	--font-size-large: 2rem;
+	--line-height-base: 1.5;
+	--text-color-primary:#221244;
+	--text-color-light:white;
+	--text-color-gray:#747474;
+	--text-color-dark:balck;
+	--text-color-red:#D54D51;
+	--tex-color-hover:#7F170EFF;
+}
+
+/*Fonts*/
+* {
+	font-family: var(--font-primary);
+	font-size: var(--font-size-primary);
+	line-height: var(--line-height-base);
+	color: var(--text-color-primary);
+}
+
+h1, h2, h3 {
+	color: var(--text-color-primary);
+}
+
+h1.light, h2.light, h3.light {
+	color: var(--text-color-light);
+}
+
+h1 {
+	font-size: 2.625rem;
+}
+
+h1.large {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 2.5rem;
+}
+
+h3 {
+	font-size: 2rem;
+}
+
+p {
+	font-size: var(--font-size-primary);
+	line-height: var(--line-height-base);
+	color: var(--text-color-primary);
+}
+
+a {
+	color: var(--text-color-red);
+	text-decoration: none;
+	transition: var(--transition);
+}
+
+a:hover {
+	color: var(--text-color-hover);
+}
 
 /*# sourceMappingURL=styles.css.map */

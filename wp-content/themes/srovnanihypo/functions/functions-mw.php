@@ -1,8 +1,9 @@
-<?
+<?php
 
 /*==================================================================
 MW FUNCTIONS
 ==================================================================*/
+
 
 // Get file size
 function get_filesize($field) {
@@ -608,23 +609,8 @@ function fb_opengraph() {
   }
 ?>
 
-  <meta property="og:title" content="<? wp_title( '-', true, 'right' ); ?>">
-  <meta property="og:description" content="<?=$description; ?>">
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="<?=the_permalink(); ?>">
-  <meta property="og:site_name" content="<?=get_bloginfo(); ?>">
-  <meta property="og:image" content="<?=$img_src; ?>">
 
-  <meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:site" content="">
-	<meta name="twitter:title" content="<? wp_title('-', true, 'right'); ?>">
-	<meta name="twitter:description" content="<?=$description; ?>">
-	<meta name="twitter:image" content="<?=$img_src; ?>">
-
-  <meta name="description" content="<?=$description; ?>">
-  <meta name="keywords" content="<?=$keywords; ?>">
-
-<?
+<?php
 }
 add_action('wp_head', 'fb_opengraph', 5);
 

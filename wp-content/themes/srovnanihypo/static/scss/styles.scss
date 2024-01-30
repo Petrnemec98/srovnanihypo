@@ -6,7 +6,8 @@
 @import "src/bootstrap/grid";
 
 /*helpers*/
-@import "src/helpers/atomic";
 @import "src/helpers/variables";
-
-
+@import "src/helpers/atomic";
+@import "src/helpers/btn";
+@import "src/helpers/container";
+@import "src/helpers/typography";

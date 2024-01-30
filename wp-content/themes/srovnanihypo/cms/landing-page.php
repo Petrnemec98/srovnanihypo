@@ -10,6 +10,8 @@ get_header();
     <?=get_field('perex');?>
 </div>
 
+<p>test</p>
+
 <!--btn test-->
 <div class="block">
     <div class="container">

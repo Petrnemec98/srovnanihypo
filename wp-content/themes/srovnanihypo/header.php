@@ -28,7 +28,12 @@
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="<?= get_template_directory_uri(); ?>/static/css/styles.css">
 
+        <!-- Include jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+        <!-- WP -->
+        <? wp_enqueue_script('jquery'); ?>
+        <? wp_head(); ?>
 
         <!-- Google Tag Manager -->
         <!--TODO-->

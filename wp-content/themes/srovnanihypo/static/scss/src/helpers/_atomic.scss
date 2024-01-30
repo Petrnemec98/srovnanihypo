@@ -1,0 +1,27 @@
+/*Backgrounds*/
+.bg-primary{
+  background-color: var(--background-color);
+}
+.bg-yellow{
+  background-color: var(--yellow-color);
+  opacity: 0.85;
+}
+.bg-light{
+  background-color: var(--light-color);
+}
+.bg-dark{
+  background-color: var(--dark-color);
+}
+
+/*Border & Radius*/
+.border-primary{
+  stroke: var(--secondary-color);
+  stroke-width: 6px;
+}
+.border-light{
+  stroke: var(--gray-color);
+  stroke-width: 2px;
+}
+
+
+

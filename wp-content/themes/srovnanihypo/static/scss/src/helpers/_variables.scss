@@ -1,0 +1,32 @@
+:root{
+  /*Colors*/
+  //Buttons
+  --btn-primary-color: #FFD500;
+  --btn-primary-color-hover: #ffc400;
+  --btn-secondary-color: #251248;
+  --btn-secondary-color-hover: #1c132d;
+
+  //Page
+  --primary-color: #221244;
+  --background-color: linear-gradient(135deg, #391E68 0%, #150043 100%);
+  --secondary-color: #D54D51;
+  --yellow-color:#FFD500;
+  --light-color: #FFF;
+  --dark-color: #0B001E;
+  --gray-color: #C4C4C4;
+
+  /* Transition*/
+  --transition:         all .2s cubic-bezier( .4, 0, .2, 1);
+  --transition-slower:  all .3s ease-out;
+
+  /*Radius*/
+  --radius-btn-large: 40px;
+  --radius-btn: 20px;
+
+  /*Breakpoints*/
+  --breakpoint-xs: 576px;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
