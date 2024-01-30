@@ -2200,12 +2200,24 @@ html {
 	color: var(--text-color-primary);
 }
 
-h1, h2, h3 {
+h1, h2, h3, p, span {
 	color: var(--text-color-primary);
 }
 
-h1.light, h2.light, h3.light {
+h1.light, h2.light, h3.light, p.light, span.light {
 	color: var(--text-color-light);
+}
+
+h1.red, h2.red, h3.red, p.red, span.red {
+	color: var(--text-color-red);
+}
+
+h1.gray, h2.gray, h3.gray, p.gray, span.gray {
+	color: var(--text-color-gray);
+}
+
+h1.dark, h2.dark, h3.dark, p.dark, span.dark {
+	color: var(--text-color-dark);
 }
 
 h1 {
@@ -2227,7 +2239,6 @@ h3 {
 p {
 	font-size: var(--font-size-primary);
 	line-height: var(--line-height-base);
-	color: var(--text-color-primary);
 }
 
 a {

@@ -60,6 +60,10 @@ get_header();
     </div>
 </div>
 
+<div class="wysiwig">
+    <?=get_field('test');?>
+</div>
+
 
 
 

@@ -30,12 +30,21 @@
   }
 
 
-  // H1-H6 stylizace
-  h1, h2, h3 {
+  // H1-> stylizace
+  h1, h2, h3, p, span{
     color: var(--text-color-primary);
 
     &.light {
       color: var(--text-color-light);
+    }
+    &.red{
+      color:var(--text-color-red);
+    }
+    &.gray{
+      color:var(--text-color-gray);
+    }
+    &.dark{
+      color:var(--text-color-dark);
     }
   }
 
@@ -54,11 +63,10 @@
     font-size: 2rem; // 32px
   }
 
-  // Stylizace pro paragrafy
   p {
     font-size: var(--font-size-primary);
     line-height: var(--line-height-base);
-    color: var(--text-color-primary);
+
   }
 
   // Stylizace odkazů
