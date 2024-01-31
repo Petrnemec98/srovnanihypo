@@ -1,3 +1,17 @@
+$breakpoints: (
+        xxxs: 400px,
+        xxs:  450px,
+        xs:   576px,
+        sm:   768px,
+        smx:  850px,
+        md:   992px,
+        lg:   1230px,
+        lgx:  1350px,
+        xl:   1450px,
+        xxl:  1600px,
+        xxxl: 1700px,
+);
+
 :root{
   /*Colors*/
   //Buttons
@@ -22,11 +36,7 @@
   /*Radius*/
   --radius-btn-large: 40px;
   --radius-btn: 20px;
-
-  /*Breakpoints*/
-  --breakpoint-xs: 576px;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
 }
+
+
+

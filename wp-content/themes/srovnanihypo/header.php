@@ -46,7 +46,8 @@
         <!-- End Google Tag Manager (noscript) -->
         <div class="main-wrap">
         <header class="header">
-                <div class="">
+                <!--hlavička-->
+                <div class="nav-block">
                     <!--logo-->
                     <div class="">
                         <!--TODO-->
@@ -54,10 +55,8 @@
                             <img src="<?= get_template_directory_uri(); ?>/static/img/logo/logo-header.svg" alt="">
                         </a>
                     </div>
-                </div>
-                <!--menu - desktop-->
-                <div class="">
-                    <div class="">
+                    <!--Navigace-->
+                    <div class="navigation">
                         <nav class="main-nav" role="navigation">
                             <?php wp_nav_menu(
                                 array(
@@ -69,21 +68,11 @@
                                 )
                             ); ?>
                         </nav>
+                        <a href="#" class="btn primary">
+                            Spočítat hypotéku
+                        </a>
                     </div>
-                </div>
-                <!--menu - mobil-->
-                <div class="mobile-nav-block">
-                    <nav class="mobile-nav" role="navigation">
-                        <?php wp_nav_menu(
-                            array(
-                                'theme_location' => 'primary',
-                                'container' => false,
-                                'menu' => 'main-nav',
-                                'menu_class' => 'nav',
-                                'echo' => true
-                            )
-                        ); ?>
-                    </nav>
+
                 </div>
         </header>
     </div>
