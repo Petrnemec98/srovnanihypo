@@ -18,7 +18,7 @@ get_header();
 
 
 
-
+<?php echo do_shortcode('[contact-form-7 id="3b9d0b0" title="Formulář"]'); ?>
 
 <?php
 get_footer();

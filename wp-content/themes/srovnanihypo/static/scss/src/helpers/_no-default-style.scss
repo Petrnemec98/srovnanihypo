@@ -1,0 +1,16 @@
+button {
+  background: none; /* odstraní výchozí pozadí */
+  color: inherit; /* nastaví barvu textu stejnou jako rodičovský element */
+  border: none; /* odstraní výchozí rámeček */
+  padding: 0; /* odstraní výchozí padding */
+  margin: 0; /* odstraní výchozí okraje */
+  font: inherit; /* použije font stejný jako rodičovský element */
+  cursor: pointer; /* nastaví kurzor na ukazatel, aby uživatel věděl, že může kliknout */
+  outline: none; /* odstraní výchozí obrys, který se objeví při focus */
+  box-shadow: none; /* odstraní výchozí stínování (pokud nějaké je) */
+  text-align: inherit; /* nastaví zarovnání textu stejně jako rodičovský element */
+  line-height: normal; /* resetuje výchozí řádkování */
+  -webkit-appearance: none; /* odstraní vzhled pro Safari a Chrome */
+  -moz-appearance: none; /* odstraní vzhled pro Firefox */
+  appearance: none; /* odstraní standardní vzhled pro všechny prohlížeče */
+}
