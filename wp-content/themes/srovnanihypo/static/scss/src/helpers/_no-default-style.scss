@@ -14,3 +14,16 @@ button {
   -moz-appearance: none; /* odstraní vzhled pro Firefox */
   appearance: none; /* odstraní standardní vzhled pro všechny prohlížeče */
 }
+
+body{
+  margin: 0;
+}
+
+
+h1, h2, h3 {
+  display: block;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}

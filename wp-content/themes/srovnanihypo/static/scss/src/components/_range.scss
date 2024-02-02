@@ -1,0 +1,75 @@
+// Definice proměnné pro žlutou barvu
+$yellow-color: var(--yellow-color); // předpokládá se, že proměnná --yellow-color je definována v rodičovském CSS
+
+// Základní styl pro range input
+.your-class {
+  // Nastavení šířky na 100% a vzhled posuvníku
+  width: 100%;
+  -webkit-appearance: none; // odstraní výchozí styl pro Webkit prohlížeče
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+
+  // Styl pro stopu (track)
+  &::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 3px;
+    background: black;
+    border: none;
+    border-radius: 0; // můžete upravit pro zaoblené okraje
+  }
+
+  &::-moz-range-track {
+    width: 100%;
+    height: 3px;
+    background: black;
+    border: none;
+    border-radius: 0;
+  }
+
+  &::-ms-track {
+    width: 100%;
+    height: 3px;
+    background: black;
+    border: none;
+    border-radius: 0;
+  }
+
+  // Styl pro vybranou část (také známý jako thumb)
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px; // velikost posuvníku
+    height: 25px; // velikost posuvníku
+    background: $yellow-color;
+    border: none;
+    border-radius: 50%; // kruhový vzhled
+    margin-top: -11px; // upravit, aby byl posuvník vycentrovaný s trackem
+  }
+
+  &::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: $yellow-color;
+    border: none;
+    border-radius: 50%;
+  }
+
+  &::-ms-thumb {
+    width: 25px;
+    height: 25px;
+    background: $yellow-color;
+    border: none;
+    border-radius: 50%;
+  }
+
+  // Pro prohlížeče podporující ::-moz-range-progress a ::-ms-fill-lower pro vybranou část
+  &::-moz-range-progress {
+    background: $yellow-color;
+    height: 3px;
+  }
+
+  &::-ms-fill-lower {
+    background: $yellow-color;
+  }
+}

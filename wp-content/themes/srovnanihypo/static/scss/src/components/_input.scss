@@ -1,0 +1,41 @@
+.number-input {
+  display: flex;
+    input[type="text"] {
+      border: none; // Odstranění rámečku
+      font-size: 3rem; // Nastavení velikosti písma na 3rem
+      text-align: right;
+      &:focus {
+        outline: none; // Odstranění obrysu při zaměření (focus)
+      }
+    }
+  span {
+    font-weight: 700;
+    font-size: 3rem; // Nastavení velikosti písma pro span na 3rem, pokud je potřeba
+  }
+}
+
+.input-block{
+  row-gap: 25px;
+  display: flex;
+  flex-direction: column;
+  .text-input{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"]{
+      padding: 15px;
+      border: 2px solid var(--gray-color);
+      border-radius: var(--radius-btn);
+      &:focus-visible{
+        outline: none;
+        border: none;
+        -webkit-box-shadow: 0px 0px 10px 2px rgba(255,213,0,1);
+        -moz-box-shadow: 0px 0px 10px 2px rgba(255,213,0,1);
+        box-shadow: 0px 0px 10px 2px rgba(255,213,0,1);
+      }
+    }
+  }
+}
+

@@ -6,11 +6,12 @@
   align-items: stretch;
 }
 
+
 .radio-button{
-  flex-basis:25%;
+  flex-basis:15%;
   flex-grow: 1;
   //velikost
-  min-width: 150px;
+  min-width: 100px;
   max-height: 200px;
   max-width: 300px;
   //Nastavení flex
@@ -20,6 +21,9 @@
   justify-content: center;
   align-items: center;
   padding: 15px;
+
+  border-radius: var(--radius-btn);
+  border: 2px solid var(--gray-color);
 
   position: relative;
   &.active{
