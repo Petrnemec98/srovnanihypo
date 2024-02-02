@@ -1,6 +1,7 @@
 .number-input {
   display: flex;
-    input[type="text"] {
+    input[type="text"],
+    input[type="number"] {
       border: none; // Odstranění rámečku
       font-size: 3rem; // Nastavení velikosti písma na 3rem
       text-align: right;

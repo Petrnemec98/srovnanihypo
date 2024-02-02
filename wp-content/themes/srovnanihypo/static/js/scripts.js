@@ -16,11 +16,11 @@ let kolikPujcit = document.querySelector('[name="kolik-pujcit"]');
 function nextStepClicked() {
 	// Kolik si chcete půjčit
 	if (step === 2) {
-		console.log(castka);
+		//console.log(castka);
 		if (castka.value === '') {
 			castka.value = 2500000;
-			kolikPujcit.value = .9 * castka.value;
 		}
+		kolikPujcit.value = .9 * castka.value;
 	}
 
 	step ++;

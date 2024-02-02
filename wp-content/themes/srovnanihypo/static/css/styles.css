@@ -2104,6 +2104,18 @@ h1, h2, h3 {
 	margin-inline-end: 0;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+	-moz-appearance: textfield;
+}
+
 :root {
 	/*Colors*/
 	--btn-primary-color: #FFD500;
@@ -2347,9 +2359,10 @@ a:hover {
 }
 
 .block-radio-buttons {
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	gap: 24px;
+	gap: 15px;
 	justify-content: space-around;
 	/* Rozložení prvků */
 	align-items: stretch;
@@ -2358,7 +2371,6 @@ a:hover {
 .radio-button {
 	flex-basis: 15%;
 	flex-grow: 1;
-	min-width: 100px;
 	max-height: 200px;
 	max-width: 300px;
 	display: flex;
@@ -2366,13 +2378,15 @@ a:hover {
 	gap: 15px;
 	justify-content: center;
 	align-items: center;
-	padding: 15px;
+	padding: 10px;
 	border-radius: var(--radius-btn);
 	border: 2px solid var(--gray-color);
 	position: relative;
+	font-weight: 700;
 }
 
 .radio-button:has(input[type="radio"]:checked) {
+	border: 2px solid white;
 	-webkit-box-shadow: 0px 0px 10px 2px #ffd500;
 	-moz-box-shadow: 0px 0px 10px 2px #ffd500;
 	box-shadow: 0px 0px 10px 2px #ffd500;
@@ -2392,17 +2406,23 @@ a:hover {
 	left: 0;
 }
 
+.wpcf7-list-item-label {
+	display: none;
+}
+
 .number-input {
 	display: flex;
 }
 
-.number-input input[type="text"] {
+.number-input input[type="text"],
+.number-input input[type="number"] {
 	border: none;
 	font-size: 3rem;
 	text-align: right;
 }
 
-.number-input input[type="text"]:focus {
+.number-input input[type="text"]:focus,
+.number-input input[type="number"]:focus {
 	outline: none;
 }
 
@@ -2511,6 +2531,7 @@ a:hover {
 
 .wpcf7 {
 	margin: auto;
+	width: 100%;
 }
 
 .form-block {
