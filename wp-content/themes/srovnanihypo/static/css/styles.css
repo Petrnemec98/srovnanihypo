@@ -2514,12 +2514,16 @@ a:hover {
 }
 
 .form-block {
-	display: flex;
+	display: none;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	gap: 24px;
 	margin: 60px 0;
+}
+
+.form-block.active {
+	display: flex;
 }
 
 /*# sourceMappingURL=styles.css.map */
