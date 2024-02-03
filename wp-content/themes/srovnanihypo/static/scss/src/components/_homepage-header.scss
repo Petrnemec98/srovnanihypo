@@ -1,0 +1,56 @@
+.section{
+  &.homepage-header-block{
+    position: relative;
+  }
+}
+
+.homepage-header-block{
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 0 100px 0;
+  }
+  .intro{
+    max-width: 600px;
+    margin: auto;
+  }
+
+  //Podrtržení H1 v hlavičce
+  h1::after {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color:var(--secondary-color);
+    margin: 5px auto auto;
+  }
+
+}
+
+
+.background-cover{
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  opacity: 100%;
+  top: -120px;
+  bottom: 0;
+  .background-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover!important;
+    background: url("../img/backgrounds/AdobeStock_684799411.jpg");
+    background-repeat: no-repeat;
+  }
+  .background-color{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background:var(--background-color);
+    opacity: 65%;
+  }
+}

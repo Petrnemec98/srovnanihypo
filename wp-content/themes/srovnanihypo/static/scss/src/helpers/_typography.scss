@@ -29,6 +29,13 @@
     color: var(--text-color-primary);
   }
 
+  .intro{
+    &.light{
+      p,span,li, strong, em{
+        color: white;
+      }
+    }
+  }
 
   // H1-> stylizace
   h1, h2, h3, p, span{

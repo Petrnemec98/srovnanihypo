@@ -52,3 +52,11 @@
     }
   }
 }
+
+.buttons{
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  justify-content: center;
+  margin: 15px 0;
+}
