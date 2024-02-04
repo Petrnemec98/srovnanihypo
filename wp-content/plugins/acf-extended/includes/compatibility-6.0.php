@@ -141,7 +141,7 @@ class acfe_admin_compatibility{
         acfe_remove_filter('get_user_option_screen_layout_acf-ui-options-page', array('ACF_Admin_UI_Options_Page', 'screen_layout'));
     
         // base url
-        $default_icon = acf_get_url('assets/images/icons/icon-fields.svg');
+        $default_icon = acf_get_url('assets/images/icons/icon-land.svg');
     
         // generate default field type missing icon
         ?>
@@ -215,8 +215,8 @@ class acfe_admin_compatibility{
         $pages = array(
             'categories'                                   => 'field-type-icons/icon-field-taxonomy.svg',
             'edit-tagsphptaxonomyacf-field-group-category' => 'field-type-icons/icon-field-taxonomy.svg',
-            'block-types'                                  => 'icons/icon-fields.svg',
-            'acfe-dbt'                                     => 'icons/icon-fields.svg',
+            'block-types'                                  => 'icons/icon-land.svg',
+            'acfe-dbt'                                     => 'icons/icon-land.svg',
             'forms'                                        => 'field-type-icons/icon-field-post-object.svg',
             'acfe-form'                                    => 'field-type-icons/icon-field-post-object.svg',
             'options-pages'                                => 'field-type-icons/icon-field-group.svg',

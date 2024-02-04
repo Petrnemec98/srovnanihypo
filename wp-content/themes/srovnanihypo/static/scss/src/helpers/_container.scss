@@ -11,8 +11,30 @@
       color:white;
     }
   }
+  &.gray{
+    background: var(--gray-color);
+  }
   .container{
     display: flex;
+    flex-direction: column;
     max-width: 960px;
+    row-gap: 32px;
+     @include respond-below(md) {
+      row-gap: 20px;
+      }
+    .row{
+      width: 100%;
+      row-gap: 32px;
+      @include respond-below(md) {
+        row-gap: 20px;
+      }
+    }
   }
+}
+
+.header,
+.footer-w{
+  width: 100%;
+  max-width: 1240px;
+  margin: auto;
 }

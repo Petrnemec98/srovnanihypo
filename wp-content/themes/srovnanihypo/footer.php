@@ -1,4 +1,22 @@
 <footer class="footer">
+    <div class="section footer">
+        <div class="footer-w">
+            <div class="company-details">
+                <div class="logo">
+                    <img src="<?=get_field('logo','option');?>">
+                </div>
+                <div class="detail">
+                    <div class="logo-2">
+                        <img src="<?=get_field('logo_insia','option');?>">
+                    </div>
+                    <div class="content">
+                        <p><?=get_field('nazev','option');?></p>
+                        <p>IČO: <?=get_field('ico','option');?></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </footer>
 <!-- JS -->

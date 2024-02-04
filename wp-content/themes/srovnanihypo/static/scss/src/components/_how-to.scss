@@ -1,0 +1,16 @@
+.how-to{
+  .item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .special-number{
+    span{
+      font-size: 4rem;
+      font-weight: 800;
+      color: var(--secondary-color);
+      line-height: 100%;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.usp{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .item{
+    display: flex;
+    gap: 15px;
+  }
+}

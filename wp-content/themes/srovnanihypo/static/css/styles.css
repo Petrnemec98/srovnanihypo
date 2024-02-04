@@ -2116,6 +2116,13 @@ input[type=number] {
 	-moz-appearance: textfield;
 }
 
+p {
+	margin-block-start: 0;
+	margin-block-end: 0;
+	margin-inline-start: 0;
+	margin-inline-end: 0;
+}
+
 :root {
 	/*Colors*/
 	--btn-primary-color: #FFD500;
@@ -2245,6 +2252,7 @@ input[type=number] {
 
 .buttons {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 15px;
 	width: 100%;
 	justify-content: center;
@@ -2266,9 +2274,39 @@ input[type=number] {
 	color: white;
 }
 
+.section.gray {
+	background: var(--gray-color);
+}
+
 .section .container {
 	display: flex;
+	flex-direction: column;
 	max-width: 960px;
+	row-gap: 32px;
+}
+
+@media (max-width: 991px) {
+	.section .container {
+		row-gap: 20px;
+	}
+}
+
+.section .container .row {
+	width: 100%;
+	row-gap: 32px;
+}
+
+@media (max-width: 991px) {
+	.section .container .row {
+		row-gap: 20px;
+	}
+}
+
+.header,
+.footer-w {
+	width: 100%;
+	max-width: 1240px;
+	margin: auto;
 }
 
 /*Fonts*/
@@ -2331,12 +2369,17 @@ h2 {
 }
 
 h3 {
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
 
 p {
 	font-size: var(--font-size-primary);
 	line-height: var(--line-height-base);
+}
+
+p.small {
+	font-size: var(--font-size-small);
+	font-weight: 200;
 }
 
 a {
@@ -2350,10 +2393,6 @@ a:hover {
 }
 
 /*components*/
-.header {
-	width: 100%;
-}
-
 .nav-block {
 	display: flex;
 	justify-content: space-between;
@@ -2650,6 +2689,82 @@ a:hover {
 	height: 100%;
 	background: var(--background-color);
 	opacity: 65%;
+}
+
+.footer {
+	background: black;
+}
+
+.footer .company-details {
+	display: flex;
+	justify-content: flex-start;
+	row-gap: 24px;
+	flex-direction: column;
+}
+
+.footer .company-details .detail {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: flex-start;
+	column-gap: 24px;
+	row-gap: 10px;
+}
+
+.footer .content p {
+	color: white;
+}
+
+.kalkulacka {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.usp {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.usp .item {
+	display: flex;
+	gap: 15px;
+}
+
+.how-to .item {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 15px;
+}
+
+.how-to .special-number span {
+	font-size: 4rem;
+	font-weight: 800;
+	color: var(--secondary-color);
+	line-height: 100%;
+}
+
+.partneri .row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.partneri .row .item {
+	flex-basis: 10%;
+	flex-grow: 2;
+	max-width: 200px;
+}
+
+.partneri .row .item img {
+	width: 100%;
+	height: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */

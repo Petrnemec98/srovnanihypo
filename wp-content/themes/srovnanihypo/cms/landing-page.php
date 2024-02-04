@@ -3,53 +3,32 @@
 get_header();
 ?>
 
-
+<!-- Hlavička -->
 <div class="section homepage-header-block">
     <div class="background-cover">
         <div class="background-color"></div>
         <div class="background-img"></div>
     </div>
-    <div class="container">
+    <section class="container">
         <h1 class="light"><?=get_field('nadpis');?></h1>
         <div class="intro light">
             <?=get_field('perex');?>
         </div>
-        <div class="buttons">
-            <a href="#kalkulacka" class="btn primary">
-                Chci novou hypotéku
-            </a>
-            <a href="#kalkulacka" class="btn primary">
-                Chci refinancovat
-            </a>
-        </div>
-    </div>
-</div>
-<div class="section">
-    <div class="container">
-        <div class="wysiwig">
-            <?=get_field('test');?>
-        </div>
-    </div>
+            <?php include(get_template_directory() . "/cms/snippets/buttons.php"); ?>
+    </section>
 </div>
 
+<!--USP-->
+<?php include(get_template_directory() . "/cms/snippets/usp.php"); ?>
 
+<!--How-to-->
+<?php include(get_template_directory() . "/cms/snippets/how-to.php"); ?>
 
-<div class="section dark">
-    <div class="container">
-        <div class="wysiwig">
-            <?=get_field('test');?>
-        </div>
-    </div>
-</div>
+<!--kalkulacka-->
+<?php include(get_template_directory() . "/cms/snippets/kalkulacka.php"); ?>
 
-
-<div class="section">
-    <div id="kalkulacka" class="container">
-        <?php echo do_shortcode('[contact-form-7 id="3b9d0b0" title="Formulář"]'); ?>
-    </div>
-</div>
-
-
+<!--Partneři-->
+<?php include(get_template_directory() . "/cms/snippets/partneri.php"); ?>
 
 <?php
 get_footer();

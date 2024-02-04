@@ -52,7 +52,7 @@
                     <div class="">
                         <!--TODO-->
                         <a href="/" title="" class="logo">
-                            <img src="<?= get_template_directory_uri(); ?>/static/img/logo/logo-header.svg" alt="">
+                            <img src="<?=get_field('logo','option');?>"
                         </a>
                     </div>
                     <!--Navigace-->
