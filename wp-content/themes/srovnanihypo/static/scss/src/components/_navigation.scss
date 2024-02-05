@@ -1,11 +1,18 @@
 //Skrytí mobilní navigace
-
+.header{
+  &.secondary{
+    background-color: var(--primary-color);
+    width: 100%;
+  }
+}
 
 .nav-block{
   display: flex;
   justify-content: space-between;
   width: 100%;
   padding: 15px;
+  align-items: center;
+
   .navigation{
     display: flex;
     gap: 24px;

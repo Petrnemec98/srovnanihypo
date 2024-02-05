@@ -45,9 +45,9 @@
         <!--TODO-->
         <!-- End Google Tag Manager (noscript) -->
         <div class="main-wrap">
-        <header class="header">
+        <header class="<?php echo is_front_page() ? 'header' : 'header secondary'; ?>">
                 <!--hlavička-->
-                <div class="nav-block">
+            <div class="nav-block">
                     <!--logo-->
                     <div class="">
                         <!--TODO-->
