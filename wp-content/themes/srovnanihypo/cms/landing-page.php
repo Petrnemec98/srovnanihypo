@@ -28,7 +28,7 @@ get_header();
 <?php include(get_template_directory() . "/cms/snippets/kalkulacka.php"); ?>
 
 <!--Partneři-->
-<?php include(get_template_directory() . "/cms/snippets/partneri.php"); ?>
+<?php include(get_template_directory() . "/cms/snippets/partneri-gray.php"); ?>
 
 <?php
 get_footer();

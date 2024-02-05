@@ -9,7 +9,7 @@ get_header();
         <p class="prex"><?=get_field('popis_hypoteky');?></p>
     </div>
 </div>
-
+<!-- typy hypoték-->
 <div class="section">
     <div class="container hypoteky">
         <?php if (have_rows('typ_hypoteky')) { ?>
@@ -25,3 +25,13 @@ get_header();
         <?php } ?>
     </div>
 </div>
+
+<!--yellow banner-->
+<?php include(get_template_directory() . "/cms/snippets/yellow-banner.php"); ?>
+
+<!--Partneři-->
+<?php include(get_template_directory() . "/cms/snippets/partneri-light.php"); ?>
+
+<?php
+get_footer();
+?>
