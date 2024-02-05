@@ -16,6 +16,11 @@
   .navigation{
     display: flex;
     gap: 24px;
+    .btn{
+      @include respond-below(md) {
+        display: none;
+      }
+    }
   }
   .nav{
     display: flex;
@@ -57,6 +62,9 @@
           top: 0;
         }
       }
+    }
+    @include respond-below(md) {
+      display: none;
     }
   }
 

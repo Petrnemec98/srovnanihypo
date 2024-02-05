@@ -2410,6 +2410,12 @@ a:hover {
 	gap: 24px;
 }
 
+@media (max-width: 991px) {
+	.nav-block .navigation .btn {
+		display: none;
+	}
+}
+
 .nav-block .nav {
 	display: flex;
 	gap: 20px;
@@ -2452,6 +2458,12 @@ a:hover {
 	height: 5px;
 	background-color: var(--secondary-color);
 	top: 0;
+}
+
+@media (max-width: 991px) {
+	.nav-block .main-nav {
+		display: none;
+	}
 }
 
 .block-radio-buttons {
@@ -2679,6 +2691,13 @@ a:hover {
 	width: 100%;
 	height: 100%;
 	background: var(--yellow-color);
+}
+
+.intro-block {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
 }
 
 .section.homepage-header-block {

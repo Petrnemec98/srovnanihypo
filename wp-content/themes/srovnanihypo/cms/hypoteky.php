@@ -4,12 +4,13 @@ get_header();
 ?>
 
 <div class="section">
-    <div class="container">
+    <div class="container intro-block">
         <h1><?=get_field('nadpis_hypoteky');?></h1>
-        <p class="prex"><?=get_field('popis_hypoteky');?></p>
+        <?=get_field('popis_hypoteky');?>
     </div>
 </div>
-<!-- typy hypoték-->
+
+<!-- Typy hypoték-->
 <div class="section">
     <div class="container hypoteky">
         <?php if (have_rows('typ_hypoteky')) { ?>
