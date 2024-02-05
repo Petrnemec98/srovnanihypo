@@ -15,8 +15,7 @@
 
 /*Border & Radius*/
 .border-primary{
-  stroke: var(--secondary-color);
-  stroke-width: 6px;
+  border:solid 6px var(--secondary-color);
 }
 
 .border-light{
