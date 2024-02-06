@@ -29,6 +29,9 @@
         row-gap: 20px;
       }
     }
+    &.tiny{
+      max-width: 720px;
+    }
   }
 }
 

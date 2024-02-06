@@ -2301,6 +2301,10 @@ p {
 	}
 }
 
+.section .container.tiny {
+	max-width: 720px;
+}
+
 .nav-block,
 .footer-w {
 	width: 100%;
@@ -2364,6 +2368,10 @@ h1.large {
 }
 
 h2 {
+	font-size: 2.5rem;
+}
+
+h2 span {
 	font-size: 2.5rem;
 }
 
