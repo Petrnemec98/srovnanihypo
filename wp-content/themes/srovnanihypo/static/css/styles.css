@@ -2400,6 +2400,26 @@ a:hover {
 }
 
 /*components*/
+.accordion .accordion-item {
+	border-bottom: 1px solid #ccc;
+}
+
+.accordion .accordion-item .accordion-title {
+	cursor: pointer;
+	padding: 10px;
+	background-color: #f0f0f0;
+}
+
+.accordion .accordion-item .accordion-title h2 {
+	margin: 0;
+}
+
+.accordion .accordion-item .accordion-content {
+	display: none;
+	padding: 10px;
+	background-color: #fff;
+}
+
 .header.secondary {
 	background-color: var(--primary-color);
 	width: 100%;

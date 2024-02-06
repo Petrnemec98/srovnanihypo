@@ -3,11 +3,10 @@
 get_header();
 ?>
 
-<!--Demo -->
 
 <div class="section intro-block">
     <div class="container">
-        <h1><h1><?=get_field('nadpis');?></h1></h1>
+        <h1><?=get_field('nadpis');?></h1>
     </div>
 </div>
 
@@ -22,6 +21,7 @@ get_header();
 
 <!--Partneři-->
 <?php include(get_template_directory() . "/cms/snippets/partneri-light.php"); ?>
+
 
 <?php
 get_footer();
