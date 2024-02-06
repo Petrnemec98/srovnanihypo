@@ -71,9 +71,14 @@ function kolikPujcitOtherClicked(e) {
 
 function toggleAccordion(element) {
 	var content = element.nextElementSibling;
+	var accordionItem = element.parentNode; // Získá rodičovský prvek
+
 	if (content.style.display === "block") {
 		content.style.display = "none";
+		accordionItem.classList.remove("active"); // Odebrání třídy active
 	} else {
 		content.style.display = "block";
+		accordionItem.classList.add("active"); // Přidání třídy active
 	}
 }
+

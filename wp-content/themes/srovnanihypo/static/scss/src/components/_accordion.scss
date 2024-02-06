@@ -1,13 +1,18 @@
 .accordion {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
   .accordion-item {
-    border-bottom: 1px solid #ccc;
+    border: var(--border);
+    &.active{
+      border: var(--border-red);
+    }
 
     .accordion-title {
       cursor: pointer;
       padding: 10px;
-      background-color: #f0f0f0;
-      h2 {
-        margin: 0;
+      h3 {
+
       }
     }
 

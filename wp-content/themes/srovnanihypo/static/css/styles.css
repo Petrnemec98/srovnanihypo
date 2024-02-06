@@ -2142,6 +2142,8 @@ p {
 	/*Radius*/
 	--radius-btn-large: 40px;
 	--radius-btn: 20px;
+	--border:solid 2px var(--gray-color);
+	--border-red: solid 2px var(--secondary-color);
 }
 
 :root {
@@ -2163,6 +2165,8 @@ p {
 	/*Radius*/
 	--radius-btn-large: 40px;
 	--radius-btn: 20px;
+	--border:solid 2px var(--gray-color);
+	--border-red: solid 2px var(--secondary-color);
 }
 
 /*Backgrounds*/
@@ -2400,18 +2404,23 @@ a:hover {
 }
 
 /*components*/
+.accordion {
+	display: flex;
+	flex-direction: column;
+	row-gap: 15px;
+}
+
 .accordion .accordion-item {
-	border-bottom: 1px solid #ccc;
+	border: var(--border);
+}
+
+.accordion .accordion-item.active {
+	border: var(--border-red);
 }
 
 .accordion .accordion-item .accordion-title {
 	cursor: pointer;
 	padding: 10px;
-	background-color: #f0f0f0;
-}
-
-.accordion .accordion-item .accordion-title h2 {
-	margin: 0;
 }
 
 .accordion .accordion-item .accordion-content {
@@ -2863,12 +2872,19 @@ a:hover {
 	gap: 24px;
 	justify-content: space-around;
 	align-items: center;
+	margin: auto;
 }
 
 .partneri .row .item {
 	flex-basis: 10%;
 	flex-grow: 2;
 	max-width: 200px;
+}
+
+@media (max-width: 767px) {
+	.partneri .row .item {
+		flex-basis: 30%;
+	}
 }
 
 .partneri .row .item img {

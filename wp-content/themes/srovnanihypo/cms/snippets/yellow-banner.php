@@ -9,11 +9,11 @@
         <?=get_field('popis-banner','option');?>
 
         <div class="buttons">
-            <a href="#kalkulacka" class="btn secondary">
-                Chci novou hypotéku
+            <a href="<?=get_field('btn-url-3','option');?>" class="btn secondary">
+                <?=get_field('btn-text-3','option');?>
             </a>
-            <a href="#kalkulacka" class="btn light">
-                Chci refinancovat
+            <a href="<?=get_field('btn-url-4','option');?>" class="btn light">
+                <?=get_field('btn-text-4','option');?>
             </a>
         </div>
     </div>
