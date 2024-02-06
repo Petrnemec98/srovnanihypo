@@ -1,3 +1,13 @@
+// Navigation toggle
+// =================
+
+document.querySelector('.navigation__toggle').addEventListener('click', toggleNavigation);
+
+function toggleNavigation()
+{
+	document.querySelector('.main-nav').classList.toggle('open');
+}
+
 // Formulář
 // ========
 
