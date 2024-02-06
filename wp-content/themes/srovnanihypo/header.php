@@ -71,6 +71,9 @@
                         <a href="#" class="btn primary">
                             Spočítat hypotéku
                         </a>
+                        <button class="navigation__toggle" type="button">
+                            menu
+                        </button>
                     </div>
 
                 </div>
