@@ -1,7 +1,7 @@
 <footer class="footer">
     <div class="section footer">
-        <div class="footer-w">
-            <div class="company-details">
+        <div class="row footer-w">
+            <div class="col-12 col-lg-5 company-details">
                 <div class="logo">
                     <img src="<?=get_field('logo','option');?>">
                 </div>
@@ -13,6 +13,28 @@
                         <p><?=get_field('nazev','option');?></p>
                         <p>IČO: <?=get_field('ico','option');?></p>
                     </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-7 footer-second">
+                <div class="contact">
+                    <a href="tel:<?=get_field('telefon','option');?>" class="">
+                        <?=get_field('telefon','option');?>
+                    </a>
+                    <a href="mailto:<?=get_field('email','option');?>" class="">
+                        <?=get_field('email','option');?>
+                    </a>
+                </div>
+                <div class="footer-menu">
+                    <?php wp_nav_menu(
+                        array(
+                            'theme_location' => 'primary',
+                            'container' => false,
+                            'menu' => 'main-nav',
+                            'menu_class' => 'nav',
+                            'echo' => true
+                        )
+                    ); ?>
+                    <?php include(get_template_directory() . "/cms/snippets/button.php"); ?>
                 </div>
             </div>
         </div>

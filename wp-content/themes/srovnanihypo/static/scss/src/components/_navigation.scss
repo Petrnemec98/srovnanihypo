@@ -104,19 +104,19 @@
           }
         }
       }
-    }
-    a{
-      &:hover{
-        color: var(--yellow-color);
-        &::after{
-          content: "";
-          position: absolute;
-          display: block;
-          width: 5px;
-          height: 24px;
-          background-color:var(--yellow-color);
-          left: 0;
-          top: unset;
+      a{
+        &:hover{
+          color: var(--yellow-color);
+          &::after{
+            content: "";
+            position: absolute;
+            display: block;
+            width: 5px;
+            height: 24px;
+            background-color:var(--yellow-color);
+            left: 0;
+            top: unset;
+          }
         }
       }
     }

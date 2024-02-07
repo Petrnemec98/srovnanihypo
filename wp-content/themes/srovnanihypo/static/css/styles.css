@@ -2260,6 +2260,7 @@ p {
 	width: 100%;
 	justify-content: center;
 	margin: 15px 0;
+	padding: 0 20px;
 }
 
 .section {
@@ -2307,7 +2308,7 @@ p {
 
 @media (max-width: 991px) {
 	.section .container .row {
-		row-gap: 20px;
+		row-gap: 24px;
 	}
 }
 
@@ -2550,21 +2551,19 @@ a:hover {
 		left: 0;
 		top: unset;
 	}
-}
-
-.nav-block .main-nav a:hover {
-	color: var(--yellow-color);
-}
-
-.nav-block .main-nav a:hover::after {
-	content: "";
-	position: absolute;
-	display: block;
-	width: 5px;
-	height: 24px;
-	background-color: var(--yellow-color);
-	left: 0;
-	top: unset;
+	.nav-block .main-nav a:hover {
+		color: var(--yellow-color);
+	}
+	.nav-block .main-nav a:hover::after {
+		content: "";
+		position: absolute;
+		display: block;
+		width: 5px;
+		height: 24px;
+		background-color: var(--yellow-color);
+		left: 0;
+		top: unset;
+	}
 }
 
 .navigation__toggle {
@@ -2898,11 +2897,28 @@ a:hover {
 	background: black;
 }
 
+.footer .section {
+	padding: 24px 0;
+}
+
+@media (max-width: 991px) {
+	.footer .section {
+		padding: 10px 0;
+	}
+}
+
 .footer .company-details {
 	display: flex;
 	justify-content: flex-start;
 	row-gap: 24px;
 	flex-direction: column;
+}
+
+@media (max-width: 991px) {
+	.footer .company-details .logo {
+		display: flex;
+		justify-content: center;
+	}
 }
 
 .footer .company-details .detail {
@@ -2914,7 +2930,78 @@ a:hover {
 	row-gap: 10px;
 }
 
+@media (max-width: 991px) {
+	.footer .company-details .detail {
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.footer .company-details .detail img {
+	height: 60px;
+}
+
 .footer .content p {
+	color: white;
+}
+
+.footer .footer-second {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	row-gap: 15px;
+	justify-content: flex-end;
+}
+
+.footer .footer-second .footer-menu {
+	display: flex;
+	justify-content: flex-end;
+	gap: 15px;
+}
+
+.footer .footer-second .footer-menu ul {
+	display: flex;
+	gap: 15px;
+}
+
+.footer .footer-second .footer-menu ul li {
+	list-style: none;
+}
+
+.footer .footer-second .footer-menu a {
+	color: white;
+}
+
+.footer .footer-second .footer-menu a.btn {
+	color: black;
+}
+
+.footer .footer-second .footer-menu .current_page_item a {
+	color: var(--secondary-color);
+}
+
+@media (max-width: 991px) {
+	.footer .footer-second .footer-menu {
+		display: none;
+	}
+}
+
+.footer .footer-second .contact {
+	display: flex;
+	justify-content: flex-end;
+	gap: 15px;
+}
+
+@media (max-width: 991px) {
+	.footer .footer-second .contact {
+		align-items: center;
+		justify-content: center;
+		margin: 15px 0;
+	}
+}
+
+.footer .footer-second .contact a {
 	color: white;
 }
 

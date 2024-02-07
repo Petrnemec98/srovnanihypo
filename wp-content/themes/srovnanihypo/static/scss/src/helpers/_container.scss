@@ -30,7 +30,7 @@
       width: 100%;
       row-gap: 32px;
       @include respond-below(md) {
-        row-gap: 20px;
+        row-gap: 24px;
       }
     }
     &.tiny{
