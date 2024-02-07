@@ -72,7 +72,12 @@
                             Spočítat hypotéku
                         </a>
                         <button class="navigation__toggle" type="button">
-                            menu
+                            <div class="open">
+                                <img src="<?= get_template_directory_uri(); ?>/static/img/svg/open.svg">
+                            </div>
+                            <div class="close">
+                                <img src="<?= get_template_directory_uri(); ?>/static/img/svg/close.svg">
+                            </div>
                         </button>
                     </div>
 

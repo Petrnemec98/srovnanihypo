@@ -11,10 +11,16 @@
     justify-content: center;
     text-align: center;
     padding: 60px 0 100px 0;
+    @include respond-below(md) {
+      padding: 32px 0 32px 0;
+    }
   }
   .intro{
     max-width: 600px;
     margin: auto;
+    @include respond-below(md) {
+      padding: 0 20px;
+    }
   }
 
   //Podrtržení H1 v hlavičce

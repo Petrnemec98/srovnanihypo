@@ -6,6 +6,7 @@ document.querySelector('.navigation__toggle').addEventListener('click', toggleNa
 function toggleNavigation()
 {
 	document.querySelector('.main-nav').classList.toggle('open');
+	document.querySelector('.navigation__toggle').classList.toggle('open');
 }
 
 // Formulář

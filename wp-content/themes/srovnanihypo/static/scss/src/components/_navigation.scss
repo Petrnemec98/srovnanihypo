@@ -17,8 +17,9 @@
     display: flex;
     gap: 24px;
     .btn{
+      display: block;
       @include respond-below(md) {
-
+        display: none;
       }
     }
   }
@@ -79,18 +80,79 @@
     }
     @include respond-below(md) {
       display: none;
-
       &.open {
         position: absolute;
         top: 5rem;
+        right: 0;
         display: block;
-        width: 20rem;
-        background-color: black;
+        width: 10rem;
+        background-color: var(--primary-color);
         z-index: 100;
+      }
+      .current_page_item{
+        a{
+          font-weight: 800;
+          &::after{
+            content: "";
+            position: absolute;
+            display: block;
+            width: 5px;
+            height: 24px;
+            background-color:var(--yellow-color);
+            left: 0;
+            top: unset;
+          }
+        }
+      }
+    }
+    a{
+      &:hover{
+        color: var(--yellow-color);
+        &::after{
+          content: "";
+          position: absolute;
+          display: block;
+          width: 5px;
+          height: 24px;
+          background-color:var(--yellow-color);
+          left: 0;
+          top: unset;
+        }
       }
     }
   }
 
 }
+
+
+// Změny, pokud je .main-nav ve stavu open
+.navigation__toggle {
+  width: 62px;
+  height: 62px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  .close{
+    display: none;
+  }
+  .open{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  &.open{
+    .close{
+      display: block;
+    }
+    .open{
+      display: none;
+    }
+  }
+
+}
+
 
 
