@@ -83,3 +83,13 @@ function toggleAccordion(element) {
 	}
 }
 
+let lengthRange = document.querySelector('[name="doba-splaceni"]');
+let lengthRangeInfo = document.querySelector('#doba-splaceni-value-info');
+let loanPayment = document.querySelector('[name="doba-splaceni-castka"]');
+lengthRange.addEventListener('input', lengthRangeChanged);
+
+lengthRange.value = 10;
+function lengthRangeChanged(e) {
+	loanPayment.value = (kolikPujcit.value / (e.currentTarget.value * 12)).toFixed(0);
+	lengthRangeInfo.innerHTML = e.currentTarget.value;
+}

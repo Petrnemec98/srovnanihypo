@@ -2775,7 +2775,6 @@ a:hover {
 }
 
 .form-block {
-	display: none;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -2785,6 +2784,37 @@ a:hover {
 
 .form-block.active {
 	display: flex;
+}
+
+input[type="range"] {
+	width: calc(100%);
+	margin: 1.5rem 0;
+	-webkit-appearance: none;
+	margin-right: 15px;
+	height: 7px;
+	background: rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	background-image: linear-gradient(#ff3e8e, #e71b72);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	background: #e03171;
+	cursor: ew-resize;
+	box-shadow: 0 0 2px 0 #555;
+	transition: background .3s ease-in-out;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+	-webkit-appearance: none;
+	box-shadow: none;
+	border: none;
+	background: transparent;
 }
 
 .banner {
