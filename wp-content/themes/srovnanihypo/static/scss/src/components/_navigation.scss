@@ -51,6 +51,7 @@
       color: white;
       font-weight: 600;
       transition: var(--transition);
+      position: relative;
       &:hover{
         color: var(--secondary-color);
         &::after{
@@ -92,6 +93,7 @@
       .current_page_item{
         a{
           font-weight: 800;
+          position: relative;
           &::after{
             content: "";
             position: absolute;
@@ -100,29 +102,30 @@
             height: 24px;
             background-color:var(--yellow-color);
             left: 0;
-            top: unset;
+            top: 0;
+
           }
         }
       }
-      a{
-        &:hover{
-          color: var(--yellow-color);
-          &::after{
-            content: "";
-            position: absolute;
-            display: block;
-            width: 5px;
-            height: 24px;
-            background-color:var(--yellow-color);
-            left: 0;
-            top: unset;
-          }
-        }
+a{
+  &:hover{
+    color: var(--yellow-color);
+    &::after{
+      content: "";
+      position: absolute;
+      display: block;
+      width: 5px;
+      height: 24px;
+      background-color:var(--yellow-color);
+      left: 0;
+      top: 0;
+    }
+  }
+}
+
       }
     }
   }
-
-}
 
 
 // Změny, pokud je .main-nav ve stavu open

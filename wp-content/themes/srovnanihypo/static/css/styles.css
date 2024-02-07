@@ -2499,6 +2499,7 @@ a:hover {
 	color: white;
 	font-weight: 600;
 	transition: var(--transition);
+	position: relative;
 }
 
 .nav-block .main-nav a:hover {
@@ -2544,6 +2545,7 @@ a:hover {
 	}
 	.nav-block .main-nav .current_page_item a {
 		font-weight: 800;
+		position: relative;
 	}
 	.nav-block .main-nav .current_page_item a::after {
 		content: "";
@@ -2553,7 +2555,7 @@ a:hover {
 		height: 24px;
 		background-color: var(--yellow-color);
 		left: 0;
-		top: unset;
+		top: 0;
 	}
 	.nav-block .main-nav a:hover {
 		color: var(--yellow-color);
@@ -2566,7 +2568,7 @@ a:hover {
 		height: 24px;
 		background-color: var(--yellow-color);
 		left: 0;
-		top: unset;
+		top: 0;
 	}
 }
 
