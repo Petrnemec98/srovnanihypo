@@ -4,6 +4,9 @@
   padding: 64px 0;
   display: flex;
   justify-content: center;
+  &.intro{
+    padding-bottom:0;
+  }
 
   @include respond-below(md) {
     padding: 32px 0;

@@ -2270,6 +2270,10 @@ p {
 	justify-content: center;
 }
 
+.section.intro {
+	padding-bottom: 0;
+}
+
 @media (max-width: 991px) {
 	.section {
 		padding: 32px 0;

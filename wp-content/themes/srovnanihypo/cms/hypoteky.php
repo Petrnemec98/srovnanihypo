@@ -3,7 +3,7 @@
 get_header();
 ?>
 
-<div class="section">
+<div class="section intro">
     <div class="container intro-block">
         <h1><?=get_field('nadpis_hypoteky');?></h1>
         <?=get_field('popis_hypoteky');?>
