@@ -2123,6 +2123,12 @@ p {
 	margin-inline-end: 0;
 }
 
+input[type="submit" i] {
+	padding-block: 10px;
+	padding-inline: 20px;
+	border-width: 0;
+}
+
 :root {
 	/*Colors*/
 	--btn-primary-color: #FFD500;
@@ -2208,6 +2214,10 @@ p {
 	text-decoration: none;
 }
 
+.btn.w-max {
+	max-width: 300px;
+}
+
 .btn.large {
 	padding: 20px 20px;
 	font-size: 1.2rem;
@@ -2251,6 +2261,11 @@ p {
 
 .btn.light:hover {
 	border: var(--secondary-color) 2px solid;
+}
+
+.btn img {
+	width: 25px;
+	margin-right: 10px;
 }
 
 .buttons {
@@ -2318,6 +2333,11 @@ p {
 
 .section .container.tiny {
 	max-width: 720px;
+	row-gap: 15px;
+}
+
+form .container {
+	align-items: center;
 }
 
 .nav-block,
@@ -2414,6 +2434,29 @@ a:hover {
 	color: var(--text-color-hover);
 }
 
+.container ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.container ul li {
+	position: relative;
+	padding-left: 20px;
+	margin-bottom: 10px;
+}
+
+.container ul li::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 10px;
+	height: 10px;
+	background-color: var(--primary-color);
+	transform: translateY(-50%);
+}
+
 /*components*/
 .accordion {
 	display: flex;
@@ -2429,7 +2472,13 @@ a:hover {
 	border: var(--border-red);
 }
 
+.accordion .accordion-item.active .accordion-title img {
+	transform: rotate(180deg);
+}
+
 .accordion .accordion-item .accordion-title {
+	display: flex;
+	justify-content: space-between;
 	cursor: pointer;
 	padding: 10px;
 }
@@ -2514,6 +2563,7 @@ a:hover {
 	height: 5px;
 	background-color: var(--secondary-color);
 	top: 0;
+	margin-top: -32px;
 }
 
 .nav-block .main-nav .current_page_item a {
@@ -2528,6 +2578,7 @@ a:hover {
 	height: 5px;
 	background-color: var(--secondary-color);
 	top: 0;
+	margin-top: -32px;
 }
 
 @media (max-width: 991px) {
@@ -2536,7 +2587,7 @@ a:hover {
 	}
 	.nav-block .main-nav.open {
 		position: absolute;
-		top: 5rem;
+		top: 62px;
 		right: 0;
 		display: block;
 		width: 10rem;
@@ -2556,6 +2607,8 @@ a:hover {
 		background-color: var(--yellow-color);
 		left: 0;
 		top: 0;
+		margin-top: unset;
+		margin: 0 -40px;
 	}
 	.nav-block .main-nav a:hover {
 		color: var(--yellow-color);
@@ -2569,6 +2622,7 @@ a:hover {
 		background-color: var(--yellow-color);
 		left: 0;
 		top: 0;
+		margin: 0 -40px;
 	}
 }
 
@@ -2654,6 +2708,9 @@ a:hover {
 
 .number-input {
 	display: flex;
+	width: 100%;
+	margin: auto;
+	justify-content: center;
 }
 
 .number-input input[type="text"],
@@ -2661,6 +2718,7 @@ a:hover {
 	border: none;
 	font-size: 3rem;
 	text-align: right;
+	max-width: 8ch;
 }
 
 .number-input input[type="text"]:focus,
@@ -2670,25 +2728,29 @@ a:hover {
 
 .number-input span {
 	font-weight: 700;
+	width: fit-content;
 	font-size: 3rem;
 }
 
 .input-block {
 	row-gap: 25px;
 	display: flex;
-	flex-direction: column;
+	margin: 24px 0;
 }
 
 .input-block .text-input {
 	display: flex;
 	flex-direction: column;
 	row-gap: 5px;
+	text-align: left;
+	font-weight: 800;
 }
 
 .input-block .text-input input[type="text"],
 .input-block .text-input input[type="email"],
 .input-block .text-input input[type="tel"] {
 	padding: 15px;
+	width: 100%;
 	border: 2px solid var(--gray-color);
 	border-radius: var(--radius-btn);
 }
@@ -2777,6 +2839,7 @@ a:hover {
 }
 
 .form-block {
+	display: none;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -2788,15 +2851,39 @@ a:hover {
 	display: flex;
 }
 
+.form-block .doba-splaceni-value-info {
+	margin: auto;
+	width: fit-content;
+	padding: 15px;
+	background-color: var(--yellow-color);
+	border-radius: var(--radius-btn);
+	font-weight: 800;
+}
+
+.form-block .range-block {
+	width: 100%;
+	max-width: 620px;
+	margin: auto;
+}
+
+.form-block .range-block .wpcf7-form-control-wrap {
+	width: 100%;
+}
+
+.form-block .range-block .range-popis {
+	display: flex;
+	justify-content: space-between;
+	font-weight: 800;
+}
+
 input[type="range"] {
 	width: calc(100%);
 	margin: 1.5rem 0;
 	-webkit-appearance: none;
-	margin-right: 15px;
 	height: 7px;
 	background: rgba(0, 0, 0, 0.1);
 	border-radius: 5px;
-	background-image: linear-gradient(#ff3e8e, #e71b72);
+	background-color: var(--yellow-color);
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
@@ -2806,7 +2893,7 @@ input[type="range"]::-webkit-slider-thumb {
 	height: 30px;
 	width: 30px;
 	border-radius: 50%;
-	background: #e03171;
+	background: black;
 	cursor: ew-resize;
 	box-shadow: 0 0 2px 0 #555;
 	transition: background .3s ease-in-out;
@@ -2862,6 +2949,11 @@ input[type=range]::-webkit-slider-runnable-track {
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
+}
+
+.note {
+	color: var(--gray-color);
+	font-style: italic;
 }
 
 .section.homepage-header-block {
@@ -3026,7 +3118,11 @@ input[type=range]::-webkit-slider-runnable-track {
 .footer .footer-second .contact {
 	display: flex;
 	justify-content: flex-end;
-	gap: 15px;
+	gap: 25px;
+}
+
+.footer .footer-second .contact img {
+	width: 25px;
 }
 
 @media (max-width: 991px) {
@@ -3039,6 +3135,9 @@ input[type=range]::-webkit-slider-runnable-track {
 
 .footer .footer-second .contact a {
 	color: white;
+	display: flex;
+	align-items: center;
+	gap: 5px;
 }
 
 .kalkulacka {

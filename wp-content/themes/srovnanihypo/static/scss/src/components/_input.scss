@@ -1,32 +1,42 @@
 .number-input {
   display: flex;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
     input[type="text"],
     input[type="number"] {
       border: none; // Odstranění rámečku
       font-size: 3rem; // Nastavení velikosti písma na 3rem
       text-align: right;
+      max-width: 8ch;
       &:focus {
         outline: none; // Odstranění obrysu při zaměření (focus)
       }
     }
   span {
     font-weight: 700;
+    width: fit-content;
     font-size: 3rem; // Nastavení velikosti písma pro span na 3rem, pokud je potřeba
+    input{
+    }
   }
 }
 
 .input-block{
   row-gap: 25px;
   display: flex;
-  flex-direction: column;
+  margin: 24px 0;
   .text-input{
     display: flex;
     flex-direction: column;
     row-gap: 5px;
+    text-align: left;
+    font-weight: 800;
     input[type="text"],
     input[type="email"],
     input[type="tel"]{
       padding: 15px;
+      width: 100%;
       border: 2px solid var(--gray-color);
       border-radius: var(--radius-btn);
       &:focus-visible{

@@ -18,6 +18,7 @@ get_header();
             <div class="accordion-item">
                 <div class="accordion-title" onclick="toggleAccordion(this)">
                     <h3><?=get_sub_field('nadpis',);?></h3>
+                    <img src="<?= get_template_directory_uri(); ?>/static/img/svg/Polygon 4.svg">
                 </div>
                 <div class="accordion-content">
                     <p class="small"><?=get_sub_field('popis',);?></p>

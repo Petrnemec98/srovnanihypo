@@ -6,9 +6,16 @@
     border: var(--border);
     &.active{
       border: var(--border-red);
+      .accordion-title{
+        img{
+          transform: rotate(180deg);
+        }
+      }
     }
 
     .accordion-title {
+      display: flex;
+      justify-content: space-between;
       cursor: pointer;
       padding: 10px;
       h3 {

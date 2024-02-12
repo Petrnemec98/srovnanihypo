@@ -3,7 +3,7 @@
   width: 100%;
 }
 .form-block{
-  //display: none;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -13,18 +13,38 @@
   &.active {
     display: flex;
   }
-}
 
+  .doba-splaceni-value-info{
+    margin: auto;
+    width: fit-content;
+    padding: 15px;
+    background-color: var(--yellow-color);
+    border-radius: var(--radius-btn);
+    font-weight: 800;
+  }
+  .range-block{
+    width: 100%;
+    max-width: 620px;
+    margin: auto;
+    .wpcf7-form-control-wrap{
+      width: 100%;
+    }
+    .range-popis{
+      display: flex;
+      justify-content: space-between;
+      font-weight: 800;
+    }
+  }
+}
 
 input[type="range"] {
   width: calc(100%);
   margin: 1.5rem 0;
   -webkit-appearance: none;
-  margin-right: 15px;
   height: 7px;
   background: rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  background-image: linear-gradient(#ff3e8e, #e71b72);
+  background-color: var(--yellow-color);
   background-size: 100%;
   background-repeat: no-repeat; }
 
@@ -33,7 +53,7 @@ input[type="range"]::-webkit-slider-thumb {
   height: 30px;
   width: 30px;
   border-radius: 50%;
-  background: #e03171;
+  background: black;
   cursor: ew-resize;
   box-shadow: 0 0 2px 0 #555;
   transition: background .3s ease-in-out; }

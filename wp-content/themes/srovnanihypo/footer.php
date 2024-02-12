@@ -18,9 +18,11 @@
             <div class="col-12 col-lg-7 footer-second">
                 <div class="contact">
                     <a href="tel:<?=get_field('telefon','option');?>" class="">
+                        <img src="<?= get_template_directory_uri(); ?>/static/img/svg/red_phone.svg">
                         <?=get_field('telefon','option');?>
                     </a>
                     <a href="mailto:<?=get_field('email','option');?>" class="">
+                        <img src="<?= get_template_directory_uri(); ?>/static/img/svg/red_mail.svg">
                         <?=get_field('email','option');?>
                     </a>
                 </div>

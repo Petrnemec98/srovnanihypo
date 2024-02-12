@@ -14,6 +14,10 @@
   transition: var(--transition-slower);
   text-decoration: none;
 
+  &.w-max{
+    max-width: 300px;
+  }
+
   &.large{
     padding: 20px 20px;
     font-size: 1.2rem;
@@ -50,6 +54,11 @@
     &:hover{
       border: var(--secondary-color) 2px solid;
     }
+  }
+
+  img{
+    width: 25px;
+    margin-right: 10px;
   }
 }
 

@@ -47,3 +47,9 @@ p {
   margin-inline-start: 0;
   margin-inline-end: 0;
 }
+
+input[type="submit" i] {
+  padding-block: 10px;
+  padding-inline: 20px;
+  border-width: 0;
+}

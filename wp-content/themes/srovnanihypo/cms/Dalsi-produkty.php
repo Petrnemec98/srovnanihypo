@@ -12,7 +12,7 @@ get_header();
 
 <div class="section">
     <div class="container tiny">
-        <?=get_field('obsah');?>
+            <?=get_field('obsah');?>
     </div>
 </div>
 

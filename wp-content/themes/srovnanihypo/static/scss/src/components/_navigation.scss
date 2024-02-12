@@ -62,6 +62,7 @@
           height: 5px;
           background-color:var(--secondary-color);
           top: 0;
+          margin-top: -32px;
         }
       }
     }
@@ -76,6 +77,7 @@
           height: 5px;
           background-color:var(--secondary-color);
           top: 0;
+          margin-top: -32px;
         }
       }
     }
@@ -83,7 +85,7 @@
       display: none;
       &.open {
         position: absolute;
-        top: 5rem;
+        top: 62px;
         right: 0;
         display: block;
         width: 10rem;
@@ -103,7 +105,8 @@
             background-color:var(--yellow-color);
             left: 0;
             top: 0;
-
+            margin-top: unset;
+            margin:0 -40px;
           }
         }
       }
@@ -119,6 +122,7 @@ a{
       background-color:var(--yellow-color);
       left: 0;
       top: 0;
+      margin:0 -40px;
     }
   }
 }

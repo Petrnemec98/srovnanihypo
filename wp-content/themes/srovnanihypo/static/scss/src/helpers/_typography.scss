@@ -92,3 +92,28 @@
       color: var(--text-color-hover);
     }
   }
+.container{
+  ul {
+    list-style-type: none; // Odstraní výchozí odrážky
+    padding: 0;
+    margin: 0;
+
+    li {
+      position: relative; // Umožní pozicování pseudo-elementu
+      padding-left: 20px; // Udělá místo pro čtvereček
+      margin-bottom: 10px; // Volitelný: Pro větší rozestup mezi položkami
+
+      &::before {
+        content: ""; // Nutné pro zobrazení pseudo-elementu
+        position: absolute; // Absolutní pozicování vůči svému rodiči (li)
+        left: 0; // Zarovnání k levému okraji
+        top: 50%; // Zarovnání k vertikálnímu středu položky
+        width: 10px; // Šířka čtverečku
+        height: 10px; // Výška čtverečku
+        background-color: var(--primary-color); // Barva čtverečku
+        transform: translateY(-50%); // Centrování vůči vertikálnímu středu položky
+      }
+    }
+  }
+}
+

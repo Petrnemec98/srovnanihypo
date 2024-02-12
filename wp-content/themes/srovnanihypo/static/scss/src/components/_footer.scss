@@ -74,7 +74,10 @@ background: black;
     .contact{
       display: flex;
       justify-content: flex-end;
-      gap: 15px;
+      gap: 25px;
+      img{
+        width: 25px;
+      }
       @include respond-below(md) {
         align-items: center;
         justify-content: center;
@@ -82,7 +85,9 @@ background: black;
       }
       a{
         color: white;
-
+        display: flex;
+        align-items: center;
+        gap: 5px;
       }
     }
 

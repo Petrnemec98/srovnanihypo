@@ -38,10 +38,16 @@
     }
     &.tiny{
       max-width: 720px;
+      row-gap: 15px;
     }
   }
 }
 
+form{
+  .container{
+    align-items: center;
+  }
+}
 .nav-block,
 .footer-w{
   width: 100%;
