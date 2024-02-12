@@ -2508,7 +2508,7 @@ a:hover {
 }
 
 .nav-block .navigation .btn {
-	display: block;
+	display: flex;
 }
 
 @media (max-width: 991px) {

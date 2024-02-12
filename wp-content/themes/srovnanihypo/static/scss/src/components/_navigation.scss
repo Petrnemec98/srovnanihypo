@@ -17,7 +17,7 @@
     display: flex;
     gap: 24px;
     .btn{
-      display: block;
+      display: flex;
       @include respond-below(md) {
         display: none;
       }
