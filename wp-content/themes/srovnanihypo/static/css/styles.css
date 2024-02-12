@@ -2489,6 +2489,24 @@ a:hover {
 	background-color: #fff;
 }
 
+.screen-reader-response p {
+	color: var(--primary-color);
+	font-weight: 600;
+	font-size: 1.2rem;
+}
+
+.screen-reader-response ul {
+	display: none;
+}
+
+.screen-reader-response ul li {
+	color: var(--secondary-color);
+}
+
+.screen-reader-response ul li::before {
+	display: none;
+}
+
 .header.secondary {
 	background-color: var(--primary-color);
 	width: 100%;
@@ -2904,6 +2922,10 @@ input[type=range]::-webkit-slider-runnable-track {
 	box-shadow: none;
 	border: none;
 	background: transparent;
+}
+
+.wpcf7-response-output {
+	display: none;
 }
 
 .banner {

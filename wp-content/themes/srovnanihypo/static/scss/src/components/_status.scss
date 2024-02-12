@@ -1,0 +1,16 @@
+.screen-reader-response{
+  p{
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  ul{
+    display: none;
+    li{
+      color: var(--secondary-color);
+      &::before{
+        display: none;
+      }
+    }
+  }
+}
