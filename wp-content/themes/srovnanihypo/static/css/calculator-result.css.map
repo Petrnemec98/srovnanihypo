@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "calculator-result.css",
+	"sources": [
+		"../scss/src/components/calculator-result.scss"
+	],
+	"names": [],
+	"mappings": "AAAA,AACE,kBADgB,CAChB,cAAc,CAAC;CAEb,KAAK,EAAE,KAAK;CACZ,MAAM,EAAE,KAAK;CACb,MAAM,EAAE,IAAI,CAAC,KAAK,CAAC,mBAAmB;CACtC,aAAa,EAAE,GAAG;CAElB,OAAO,EAAE,IAAI;CACb,cAAc,EAAE,MAAM;CACtB,eAAe,EAAE,MAAM;CACvB,WAAW,EAAE,MAAM;CACpB;;AAZH,AAeI,kBAfc,CAchB,UAAU,CACR,IAAI,CAAA;CACF,SAAS,EAAE,KAAK;CACjB;;AAjBL,AAmBE,kBAnBgB,CAmBhB,MAAM,CAAA;CACJ,SAAS,EAAE,KAAK;CAChB,MAAM,EAAE,IAAI;CACb"
+}

@@ -2,51 +2,75 @@
 /* Template Name: Děkujeme - coffee digital*/
 get_header();
 ?>
+
+
+
+<div class="section intro">
+    <div class="container intro-block">
+        <h1><?=get_field('nadpis');?></h1>
+        <?=get_field('perex');?>
+
+
+    </div>
+</div>
+
+<!--Výsledek z kalkulačky-->
+<div class="section calculator-result">
+    <div class="container">
+        <div class="row m-720">
+            <div class="col-12 col-md-4">
+                <div class="yellow-circle">
+                    <span>Úrok</span>
+                    <h3 id="urok"><?=get_field('urok_1','option');?></h3>
+                </div>
+            </div>
+            <div class="col-12 col-md-8">
+                <div class="row info-area">
+                    <div class="col-12">
+                        <span>Měsíční splátka</span>
+                        <h3><span id="repaymentAmount"></span>,- Kč</h3>
+                    </div>
+                    <div class="col-12">
+                        <span>Doba splácení</span>
+                        <h3><span id="repaymentPeriod"></span> let</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row info-area m-720">
+            <div class="col-12 col-md-4">
+                <span>Typ nemovitosti</span>
+                <h3><span id="propertyType"></span></h3>
+            </div>
+            <div class="col-12 col-md-4">
+                <span>Odhad částky</span>
+                <h3><span id="estimatedAmount"></span>,- Kč</h3>
+            </div>
+            <div class="col-12 col-md-4">
+                <span>Kolik půjčit</span>
+                <h3><span id="borrowAmount"></span>,- Kč</h3>
+            </div>
+        </div>
+        <div class="row m-auto">
+
+            <a href="<?= home_url(); ?>" class="btn primary">
+                &#x1F3E0; Zpět na domovskou obrazovku
+            </a>
+
+        </div>
+    </div>
+
+</div>
+
+<!--How-to-->
+<?php include(get_template_directory() . "/cms/snippets/how-to.php"); ?>
+
+<!--Partneři-->
+<?php include(get_template_directory() . "/cms/snippets/partneri-light.php"); ?>
+
 <script>
-    const queryString = window.location.search;
-    console.log(queryString);
-
-    const urlParams = new URLSearchParams(queryString);
-
-    // Opravený název parametru z 'protyp-nemovitosti' na 'typ-nemovitosti[0]'
-    const propertyType = urlParams.get('typ-nemovitosti[0]')
-    console.log('Typ nemovitosti:', propertyType);
-
-    // Správně
-    const estimatedAmount = urlParams.get('castka-odhad')
-    console.log('Odhad částky:', estimatedAmount);
-
-    // Opravený název parametru z 'procenta-pujcky' na 'procenta-pujcky[0]'
-    const loanPercentage = urlParams.get('procenta-pujcky[0]')
-    console.log('Procenta půjčky:', loanPercentage);
-
-    // Správně
-    const borrowAmount = urlParams.get('kolik-pujcit')
-    console.log('Kolik půjčit:', borrowAmount);
-
-    // Přidání dalších parametrů
-    const repaymentPeriod = urlParams.get('doba-splaceni')
-    console.log('Doba splacení:', repaymentPeriod);
-
-    const repaymentAmount = urlParams.get('doba-splaceni-castka')
-    console.log('Doba splacení částka:', repaymentAmount);
-
-    const fixationLength = urlParams.get('delka-fixace[0]')
-    console.log('Délka fixace:', fixationLength);
-
-    const name = urlParams.get('jmeno')
-    console.log('Jméno:', name);
-
-    const email = urlParams.get('email')
-    console.log('Email:', email);
-
-    const phoneNumber = urlParams.get('phone-number')
-    console.log('Telefonní číslo:', phoneNumber);
-
-    const postalCode = urlParams.get('PSC')
-    console.log('PSČ:', postalCode);
-
-        document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function() {
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
 
@@ -61,7 +85,7 @@ get_header();
         const interest2 = "<?=get_field('urok_2','option');?>";
         const interest3 = "<?=get_field('urok_3','option');?>";
 
-            if (ratio >= 0 && ratio <= 70) {
+        if (ratio >= 0 && ratio <= 70) {
             interestContent = interest1;
         } else if (ratio >= 71 && ratio <= 80) {
             interestContent = interest2;
@@ -71,21 +95,10 @@ get_header();
 
         const interestElement = document.getElementById('urok');
         if (interestElement) {
-        interestElement.innerHTML = interestContent;
-    }
+            interestElement.innerHTML = interestContent;
+        }
     });
-
 </script>
-
-
-<div class="section">
-    <div class="container intro-block">
-        <h1><?=get_field('nadpis');?></h1>
-        <?=get_field('perex');?>
-
-        <p id="urok"><?=get_field('urok_1','option');?></p>
-    </div>
-</div>
 
 <?php
 get_footer();

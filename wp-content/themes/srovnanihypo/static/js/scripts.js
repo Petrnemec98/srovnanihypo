@@ -9,6 +9,36 @@ function toggleNavigation()
 	document.querySelector('.navigation__toggle').classList.toggle('open');
 }
 
+//Výsledek
+//========
+document.addEventListener('DOMContentLoaded', function () {
+	const queryString = window.location.search;
+	console.log('QueryString:', queryString);
+	const urlParams = new URLSearchParams(queryString);
+
+	// Získání hodnot z URL a nastavení do HTML
+	const propertyType = urlParams.get('typ-nemovitosti[0]');
+	console.log('Property Type:', propertyType);
+	document.getElementById('propertyType').textContent = propertyType;
+
+	const estimatedAmount = urlParams.get('castka-odhad');
+	console.log('Estimated Amount:', estimatedAmount);
+	document.getElementById('estimatedAmount').textContent = estimatedAmount;
+
+
+	const borrowAmount = urlParams.get('kolik-pujcit');
+	console.log('Borrow Amount:', borrowAmount);
+	document.getElementById('borrowAmount').textContent = borrowAmount;
+
+	const repaymentPeriod = urlParams.get('doba-splaceni');
+	console.log('Repayment Period:', repaymentPeriod);
+	document.getElementById('repaymentPeriod').textContent = repaymentPeriod;
+
+	const repaymentAmount = urlParams.get('doba-splaceni-castka');
+	console.log('Repayment Amount:', repaymentAmount);
+	document.getElementById('repaymentAmount').textContent = repaymentAmount;
+});
+
 // Formulář
 // ========
 
@@ -93,3 +123,5 @@ function lengthRangeChanged(e) {
 	loanPayment.value = (kolikPujcit.value / (e.currentTarget.value * 12)).toFixed(0);
 	lengthRangeInfo.innerHTML = e.currentTarget.value;
 }
+
+

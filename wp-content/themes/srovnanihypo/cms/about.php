@@ -29,8 +29,7 @@ get_header();
     <!--yellow banner-->
     <?php include(get_template_directory() . "/cms/snippets/yellow-banner.php"); ?>
 
-    <!--Partneři-->
-    <?php include(get_template_directory() . "/cms/snippets/partneri-light.php"); ?>
+
 
 
 <?php

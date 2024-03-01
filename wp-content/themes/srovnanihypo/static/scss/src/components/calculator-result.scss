@@ -1,0 +1,46 @@
+.calculator-result{
+  .yellow-circle {
+    //nastavení kruhu
+    width: 200px;
+    height: 200px;
+    border: 15px solid var(--yellow-color);
+    border-radius: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .info-area{
+    span{
+      font-size: unset;
+    }
+  }
+  .m-720{
+    max-width: 720px;
+    margin: auto;
+    align-items: center;
+    @include respond-below(md) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .col-12,
+    .col-6{
+      @include respond-below(sm) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  .btn{
+    max-width: unset;
+    margin: auto;
+  }
+  .m-auto{
+    margin: auto;
+  }
+}

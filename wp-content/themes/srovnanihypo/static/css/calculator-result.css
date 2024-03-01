@@ -1,0 +1,21 @@
+.calculator-result .yellow-circle {
+	width: 200px;
+	height: 200px;
+	border: 15px solid var(--yellow-color);
+	border-radius: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.calculator-result .info-area span {
+	font-size: unset;
+}
+
+.calculator-result .m-720 {
+	max-width: 720px;
+	margin: auto;
+}
+
+/*# sourceMappingURL=calculator-result.css.map */
