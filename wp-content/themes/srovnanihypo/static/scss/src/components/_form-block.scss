@@ -15,17 +15,19 @@
   }
 
   .doba-splaceni-value-info{
-    margin: auto;
-    width: fit-content;
+    position: absolute;
+    bottom: 75px;
+    min-width: 54px;
     padding: 15px;
     background-color: var(--yellow-color);
     border-radius: var(--radius-btn);
     font-weight: 800;
   }
   .range-block{
+    position: relative;
     width: 100%;
     max-width: 620px;
-    margin: auto;
+    margin: 55px auto 0;
     .wpcf7-form-control-wrap{
       width: 100%;
     }
@@ -40,13 +42,40 @@
 input[type="range"] {
   width: calc(100%);
   margin: 1.5rem 0;
-  -webkit-appearance: none;
+  -webkit-appearance: none; /* Odstraní výchozí styl prohlížeče */
   height: 7px;
-  background: rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  background-color: var(--yellow-color);
-  background-size: 100%;
-  background-repeat: no-repeat; }
+  background: linear-gradient(to right, black 0%, black var(--range-value, 50%), var(--yellow-color) var(--range-value, 50%), var(--yellow-color) 100%);
+  background-size: 100% 7px; /* Zajistí, že gradient pokryje celou výšku tracku */
+  background-repeat: no-repeat;
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px; /* Šířka posuvníku */
+    height: 20px; /* Výška posuvníku */
+    border-radius: 50%; /* Kulatý posuvník */
+    background: #FFF; /* Barva posuvníku */
+    cursor: pointer; /* Změní kurzor na ukazovátko */
+  }
+
+  &::-moz-range-thumb {
+    width: 20px; /* Šířka posuvníku */
+    height: 20px; /* Výška posuvníku */
+    border-radius: 50%; /* Kulatý posuvník */
+    background: #FFF; /* Barva posuvníku */
+    cursor: pointer; /* Změní kurzor na ukazovátko */
+  }
+
+  &::-ms-thumb {
+    width: 20px; /* Šířka posuvníku */
+    height: 20px; /* Výška posuvníku */
+    border-radius: 50%; /* Kulatý posuvník */
+    background: #FFF; /* Barva posuvníku */
+    cursor: pointer; /* Změní kurzor na ukazovátko */
+  }
+}
+
 
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;

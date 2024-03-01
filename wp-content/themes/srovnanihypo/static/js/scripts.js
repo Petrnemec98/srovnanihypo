@@ -118,10 +118,52 @@ let lengthRangeInfo = document.querySelector('#doba-splaceni-value-info');
 let loanPayment = document.querySelector('[name="doba-splaceni-castka"]');
 lengthRange.addEventListener('input', lengthRangeChanged);
 
-lengthRange.value = 10;
+lengthRange.value = 1;
 function lengthRangeChanged(e) {
 	loanPayment.value = (kolikPujcit.value / (e.currentTarget.value * 12)).toFixed(0);
 	lengthRangeInfo.innerHTML = e.currentTarget.value;
 }
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+
+	const range = document.querySelector('input[type="range"]');
+	const dobaSplaceniValueInfo = document.querySelector('#doba-splaceni-value-info');
+	const dobaSplaceniValueInfoWrapper = document.querySelector('.doba-splaceni-value-info');
+
+	function updateRangeBackground() {
+		const minValue = parseInt(range.min) || 0; // Minimální hodnota range
+		const maxValue = parseInt(range.max) || 100; // Maximální hodnota range
+		const currentValue = parseInt(range.value); // Aktuální hodnota range
+		const percentage = ((currentValue - minValue) / (maxValue - minValue)) * 100;
+
+		range.style.background = `linear-gradient(to right, black 0%, black ${percentage}%, var(--yellow-color) ${percentage}%, var(--yellow-color) 100%)`;
+	}
+
+	function updateValueInfoPosition() {
+		const rangeWidth = range.offsetWidth;
+		const minValue = parseInt(range.min) || 0;
+		const maxValue = parseInt(range.max) || 100;
+		const currentValue = parseInt(range.value);
+		const percentage = ((currentValue - minValue) / (maxValue - minValue));
+		const position = (percentage * rangeWidth) - (dobaSplaceniValueInfoWrapper.offsetWidth / 2) + (range.getBoundingClientRect().left - range.parentElement.getBoundingClientRect().left);
+
+		dobaSplaceniValueInfoWrapper.style.left = `${position}px`;
+		dobaSplaceniValueInfo.textContent = currentValue;
+	}
+
+	// Aktualizace při posunu posuvníkem
+	range.addEventListener('input', function() {
+		updateRangeBackground();
+		updateValueInfoPosition();
+	});
+
+	// Inicializace při načtení stránky
+	updateRangeBackground();
+	updateValueInfoPosition();
+});
+
+
 
 
