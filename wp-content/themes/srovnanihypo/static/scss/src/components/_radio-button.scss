@@ -45,6 +45,10 @@
     top: 0;
     left: 0;
   }
+
+  &.small{
+    gap: unset;
+  }
 }
 
 .wpcf7-list-item-label{

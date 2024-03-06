@@ -9,6 +9,9 @@
       font-size: 3rem; // Nastavení velikosti písma na 3rem
       text-align: right;
       max-width: 8ch;
+      @include respond-below(md) {
+        font-size: 2rem;
+      }
       &:focus {
         outline: none; // Odstranění obrysu při zaměření (focus)
       }
@@ -17,7 +20,8 @@
     font-weight: 700;
     width: fit-content;
     font-size: 3rem; // Nastavení velikosti písma pro span na 3rem, pokud je potřeba
-    input{
+    @include respond-below(md) {
+      font-size: 2rem;
     }
   }
 }

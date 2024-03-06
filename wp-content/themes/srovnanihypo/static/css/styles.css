@@ -2720,6 +2720,10 @@ a:hover {
 	left: 0;
 }
 
+.radio-button.small {
+	gap: unset;
+}
+
 .wpcf7-list-item-label {
 	display: none;
 }
@@ -2739,6 +2743,13 @@ a:hover {
 	max-width: 8ch;
 }
 
+@media (max-width: 991px) {
+	.number-input input[type="text"],
+	.number-input input[type="number"] {
+		font-size: 2rem;
+	}
+}
+
 .number-input input[type="text"]:focus,
 .number-input input[type="number"]:focus {
 	outline: none;
@@ -2748,6 +2759,12 @@ a:hover {
 	font-weight: 700;
 	width: fit-content;
 	font-size: 3rem;
+}
+
+@media (max-width: 991px) {
+	.number-input span {
+		font-size: 2rem;
+	}
 }
 
 .input-block {
