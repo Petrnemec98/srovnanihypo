@@ -20,7 +20,7 @@ get_header();
         <div class="row m-720">
             <div class="col-12 col-md-4">
                 <div class="yellow-circle">
-                    <span>Úrok</span>
+                    <span>Úrok od</span>
                     <h3 id="urok"><?=get_field('urok_1','option');?></h3>
                 </div>
             </div>

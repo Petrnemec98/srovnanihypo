@@ -2214,6 +2214,11 @@ input[type="submit" i] {
 	text-decoration: none;
 }
 
+.btn[disabled] {
+	background-color: #999999 !important;
+	cursor: not-allowed;
+}
+
 .btn.w-max {
 	max-width: 300px;
 }
@@ -2738,6 +2743,7 @@ a:hover {
 .number-input input[type="text"],
 .number-input input[type="number"] {
 	border: none;
+	font-weight: 700;
 	font-size: 3rem;
 	text-align: right;
 	max-width: 8ch;

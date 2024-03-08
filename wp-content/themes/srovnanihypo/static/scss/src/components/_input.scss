@@ -6,6 +6,7 @@
     input[type="text"],
     input[type="number"] {
       border: none; // Odstranění rámečku
+      font-weight: 700;
       font-size: 3rem; // Nastavení velikosti písma na 3rem
       text-align: right;
       max-width: 8ch;

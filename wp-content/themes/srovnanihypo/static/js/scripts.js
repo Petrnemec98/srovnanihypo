@@ -23,12 +23,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	const estimatedAmount = urlParams.get('castka-odhad');
 	console.log('Estimated Amount:', estimatedAmount);
-	document.getElementById('estimatedAmount').textContent = estimatedAmount;
+	document.getElementById('estimatedAmount').textContent = new Intl.NumberFormat('cs-CZ').format(estimatedAmount);
 
 
 	const borrowAmount = urlParams.get('kolik-pujcit');
 	console.log('Borrow Amount:', borrowAmount);
-	document.getElementById('borrowAmount').textContent = borrowAmount;
+	document.getElementById('borrowAmount').textContent = new Intl.NumberFormat('cs-CZ').format(borrowAmount);
 
 	const repaymentPeriod = urlParams.get('doba-splaceni');
 	console.log('Repayment Period:', repaymentPeriod);
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	const repaymentAmount = urlParams.get('doba-splaceni-castka');
 	console.log('Repayment Amount:', repaymentAmount);
-	document.getElementById('repaymentAmount').textContent = repaymentAmount;
+	document.getElementById('repaymentAmount').textContent = new Intl.NumberFormat('cs-CZ').format(repaymentAmount);
 });
 
 // Formulář
@@ -117,12 +117,14 @@ let lengthRange = document.querySelector('[name="doba-splaceni"]');
 let lengthRangeInfo = document.querySelector('#doba-splaceni-value-info');
 let loanPayment = document.querySelector('[name="doba-splaceni-castka"]');
 lengthRange.addEventListener('input', lengthRangeChanged);
-
 lengthRange.value = 1;
 function lengthRangeChanged(e) {
 	loanPayment.value = (kolikPujcit.value / (e.currentTarget.value * 12)).toFixed(0);
 	lengthRangeInfo.innerHTML = e.currentTarget.value;
 }
+
+kolikPujcit.addEventListener('input', lengthRangeChanged);
+kolikPujcit.addEventListener('change', lengthRangeChanged);
 
 
 
@@ -163,6 +165,28 @@ document.addEventListener('DOMContentLoaded', function() {
 	updateRangeBackground();
 	updateValueInfoPosition();
 });
+
+document.querySelector('.odeslatbutton').setAttribute('disabled', 'true');
+document.querySelectorAll('.form-last-step input[type="text"]').forEach((item) => {
+	item.addEventListener('input', isReadyToSend);
+	item.addEventListener('onkeypress', isReadyToSend);
+});
+
+function isReadyToSend() {
+	let readyToSend = true;
+	document.querySelectorAll('.form-last-step input').forEach((item) => {
+		if (item.value === '') {
+			readyToSend = false;
+		}
+	});
+
+	console.log(readyToSend);
+	if (readyToSend) {
+		document.querySelector('.odeslatbutton').removeAttribute('disabled');
+	} else {
+		document.querySelector('.odeslatbutton').setAttribute('disabled', 'true');
+	}
+}
 
 
 
