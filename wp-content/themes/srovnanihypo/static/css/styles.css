@@ -3284,6 +3284,15 @@ input[type=range]::-webkit-slider-runnable-track {
 	margin: auto;
 }
 
+.toggle label {
+	display: flex;
+	align-items: center;
+}
+
+.toggle .wpcf7-list-item-label {
+	display: block;
+}
+
 .usp {
 	display: flex;
 	flex-direction: column;

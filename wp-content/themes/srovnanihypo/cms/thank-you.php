@@ -53,7 +53,9 @@ get_header();
             </div>
         </div>
         <div class="row m-auto">
-
+            <div class="container">
+                <?=get_field('obsah');?>
+            </div>
             <a href="<?= home_url(); ?>" class="btn primary">
                 &#x1F3E0; Zpět na domovskou obrazovku
             </a>

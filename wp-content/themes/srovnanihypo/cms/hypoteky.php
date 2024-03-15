@@ -27,6 +27,12 @@ get_header();
     </div>
 </div>
 
+<div class="section">
+    <div class="container tiny">
+        <?=get_field('obsah');?>
+    </div>
+</div>
+
 <!--yellow banner-->
 <?php include(get_template_directory() . "/cms/snippets/yellow-banner.php"); ?>
 
