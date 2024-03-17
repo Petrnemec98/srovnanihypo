@@ -1,0 +1,15 @@
+.insia{
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  @include respond-below(md) {
+    margin-top: 15px;
+  }
+  img{
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    height: 30px;
+  }
+}

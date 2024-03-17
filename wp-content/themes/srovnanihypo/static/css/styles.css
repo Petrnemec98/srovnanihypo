@@ -3229,6 +3229,10 @@ input[type=range]::-webkit-slider-runnable-track {
 	gap: 5px;
 }
 
+.footer .white-url a {
+	color: white;
+}
+
 .kalkulacka {
 	display: flex;
 	flex-direction: column;
@@ -3291,6 +3295,26 @@ input[type=range]::-webkit-slider-runnable-track {
 
 .toggle .wpcf7-list-item-label {
 	display: block;
+}
+
+.insia {
+	margin-top: 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+@media (max-width: 991px) {
+	.insia {
+		margin-top: 15px;
+	}
+}
+
+.insia img {
+	background-color: var(--primary-color);
+	border-radius: 10px;
+	height: 30px;
 }
 
 .usp {

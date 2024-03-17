@@ -12,6 +12,7 @@
                     <div class="content">
                         <p><?=get_field('nazev','option');?></p>
                         <p>IČO: <?=get_field('ico','option');?></p>
+                        <p class="white-url"><a target="_blank" href="<?=get_field('cnb-url','option');?>"><?=get_field('cnb-text','option');?></a></p>
                     </div>
                 </div>
             </div>

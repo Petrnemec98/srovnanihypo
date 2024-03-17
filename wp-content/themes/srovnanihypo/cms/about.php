@@ -7,9 +7,11 @@ get_header();
     <div class="container intro-block">
         <h1><?=get_field('nazev','option');?></h1>
         <div class="detail">
-            <p>IČO: <?=get_field('adresa','option');?></p>
+            <p><?=get_field('adresa','option');?></p>
             <p>IČO: <?=get_field('ico','option');?></p>
-            <p>IČO: <?=get_field('spisova_znacka','option');?></p>
+            <p><?=get_field('spisova_znacka','option');?></p>
+            <p class="insia"><?=get_field('insia','option');?><img class="insia-logo" src="<?=get_field('logo_insia','option');?>"></p>
+
         </div>
         <div class="buttons">
             <a href="tel:<?=get_field('telefon','option');?>" class="btn w-max secondary">
