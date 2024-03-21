@@ -1,6 +1,7 @@
 // Navigation toggle
 // =================
 
+
 document.querySelector('.navigation__toggle').addEventListener('click', toggleNavigation);
 
 function toggleNavigation()

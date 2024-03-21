@@ -28,6 +28,9 @@
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="<?= get_template_directory_uri(); ?>/static/css/styles.css">
 
+        <!-- CSS pro Splide -->
+        <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/static/css/splide.min.css">
+
         <!-- Include jQuery -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 

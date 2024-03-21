@@ -44,6 +44,24 @@
     </div>
 
 </footer>
+<!-- JavaScript pro Splide -->
+<script type="text/javascript" src="<?= get_template_directory_uri(); ?>/static/js/splide.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var splide = new Splide('.splide', {
+            perPage: 4, // Výchozí počet položek na stránku
+            rewind: true,
+            breakpoints: {
+                768: { // Při šířce obrazovky 768px nebo méně
+                    perPage: 2, // Změňte na 2 položky na stránku
+                },
+            },
+        });
+
+        splide.mount();
+    });
+</script>
+
 <!-- JS -->
 <script type="text/javascript" src="<?= get_template_directory_uri(); ?>/static/js/scripts.js"></script>
 <!-- Cookie consent CSS -->

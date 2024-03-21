@@ -3375,21 +3375,22 @@ input[type=range]::-webkit-slider-runnable-track {
 	margin: auto;
 }
 
-.partneri .row .item {
-	flex-basis: 10%;
-	flex-grow: 2;
-	max-width: 200px;
-}
-
-@media (max-width: 767px) {
-	.partneri .row .item {
-		flex-basis: 30%;
-	}
-}
-
-.partneri .row .item img {
+.partneri .row a {
 	width: 100%;
 	height: 100%;
+}
+
+.partneri .row img {
+	width: 100%;
+	height: 100%;
+}
+
+.partneri li::before {
+	display: none !important;
+}
+
+.partneri .splide__pagination--ltr {
+	display: none;
 }
 
 .hypoteky .item {
