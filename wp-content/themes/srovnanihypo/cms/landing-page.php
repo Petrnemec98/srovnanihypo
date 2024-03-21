@@ -27,8 +27,13 @@ get_header();
 <!--kalkulacka-->
 <?php include(get_template_directory() . "/cms/snippets/kalkulacka.php"); ?>
 
+<!--O-nás-->
+<?php include(get_template_directory() . "/cms/snippets/about-us.php"); ?>
+
 <!--Partneři-->
 <?php include(get_template_directory() . "/cms/snippets/partneri-gray.php"); ?>
+
+
 
 <?php
 get_footer();

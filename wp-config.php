@@ -26,13 +26,11 @@ define('WP_CACHE', true); // Added by W3 Total Cache
 define( 'DB_NAME', 'srovnanihypo' );
 
 /** Database username */
-define( 'DB_USER', 'root' );
-
+define( 'DB_USER', 'root-mysql' );
 /** Database password */
-define( 'DB_PASSWORD', 'root' );
-
+define( 'DB_PASSWORD', 'KtepWYtvEiUcgE9RVZNV' );
 /** Database hostname */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', 'zameckehotely.cz' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
