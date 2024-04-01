@@ -28,6 +28,7 @@ define( 'DB_NAME', 'srovnanihypo' );
 /** Database username */
 define( 'DB_USER', 'root' );
 
+
 /** Database password */
 define( 'DB_PASSWORD', 'root' );
 
