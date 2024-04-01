@@ -71,8 +71,11 @@
                                 )
                             ); ?>
                         </nav>
-                        <a href="#" class="btn primary">
+                        <a href="<?=get_field('btn-url-1','option');?>" class="btn primary">
                             Spočítat hypotéku
+                        </a>
+                        <a href="tel:<?=get_field('telefon','option');?>" class="btn primary">
+                            <?=get_field('telefon','option');?>
                         </a>
                         <button class="navigation__toggle" type="button">
                             <div class="open">

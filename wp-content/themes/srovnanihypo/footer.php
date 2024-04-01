@@ -51,6 +51,8 @@
         var splide = new Splide('.splide', {
             perPage: 4, // Výchozí počet položek na stránku
             rewind: true,
+            type    : 'loop',
+            autoplay: 'play',
             breakpoints: {
                 768: { // Při šířce obrazovky 768px nebo méně
                     perPage: 2, // Změňte na 2 položky na stránku

@@ -2214,6 +2214,10 @@ input[type="submit" i] {
 	text-decoration: none;
 }
 
+.btn.width-unlimited {
+	max-width: unset;
+}
+
 .btn[disabled] {
 	background-color: #999999 !important;
 	cursor: not-allowed;
@@ -2416,6 +2420,10 @@ h2 span {
 }
 
 h3 {
+	font-size: 1.5rem;
+}
+
+h3 span {
 	font-size: 1.5rem;
 }
 
@@ -3206,6 +3214,7 @@ input[type=range]::-webkit-slider-runnable-track {
 
 .footer .footer-second .contact {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: flex-end;
 	gap: 25px;
 }
@@ -3238,6 +3247,10 @@ input[type=range]::-webkit-slider-runnable-track {
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
+}
+
+.toggle {
+	margin: auto;
 }
 
 .calculator-result .yellow-circle {

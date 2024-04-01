@@ -24,12 +24,10 @@ get_header();
             <?php } ?>
         </div>
         <?php } ?>
-    </div>
-</div>
-
-<div class="section">
-    <div class="container tiny">
-        <?=get_field('obsah');?>
+        <div class="item border-primary">
+            <?=get_field('obsah');?>
+            <?php include(get_template_directory() . "/cms/snippets/button.php"); ?>
+        </div>
     </div>
 </div>
 

@@ -1,4 +1,5 @@
 /*btn*/
+
 .btn{
   border-radius: var(--radius-btn);
   text-align: center;
@@ -13,6 +14,10 @@
   max-width: 200px;
   transition: var(--transition-slower);
   text-decoration: none;
+
+  &.width-unlimited{
+    max-width: unset;
+  }
 
   &[disabled] {
     background-color: #999999 !important;
