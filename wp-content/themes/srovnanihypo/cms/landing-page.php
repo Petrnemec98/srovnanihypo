@@ -31,7 +31,7 @@ get_header();
 <?php include(get_template_directory() . "/cms/snippets/about-us.php"); ?>
 
 <!--Partneři-->
-<?php include(get_template_directory() . "/cms/snippets/partneri-gray.php"); ?>
+<?php include(get_template_directory() . "/cms/snippets/partneri-light.php"); ?>
 
 
 <?php
