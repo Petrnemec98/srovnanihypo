@@ -34,7 +34,6 @@ get_header();
 <?php include(get_template_directory() . "/cms/snippets/partneri-gray.php"); ?>
 
 
-
 <?php
 get_footer();
 ?>
