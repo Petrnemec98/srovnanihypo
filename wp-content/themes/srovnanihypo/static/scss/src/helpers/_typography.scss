@@ -64,16 +64,24 @@
 
   h2{
     font-size: 2.5rem; // 40px
+    font-weight: normal;
     span{
       font-size: 2.5rem; // 40px
     }
     .how-to & {
       text-align: center;
     }
+    @include respond-below(md) {
+      font-size: 2rem; // 40px
+      span{
+        font-size: 2rem; // 40px
+      }
+    }
   }
 
   h3 {
     font-size: 1.5rem; // 32px
+    font-weight: normal;
     span{
       font-size: 1.5rem; // 40px
     }

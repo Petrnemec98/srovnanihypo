@@ -2413,6 +2413,7 @@ h1.large {
 
 h2 {
 	font-size: 2.5rem;
+	font-weight: normal;
 }
 
 h2 span {
@@ -2423,8 +2424,18 @@ h2 span {
 	text-align: center;
 }
 
+@media (max-width: 991px) {
+	h2 {
+		font-size: 2rem;
+	}
+	h2 span {
+		font-size: 2rem;
+	}
+}
+
 h3 {
 	font-size: 1.5rem;
+	font-weight: normal;
 }
 
 h3 span {
