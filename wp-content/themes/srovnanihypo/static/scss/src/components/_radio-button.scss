@@ -49,6 +49,13 @@
   &.small{
     gap: unset;
   }
+
+
+  .wpcf7-form-control-wrap{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
 }
 
 .wpcf7-list-item-label{
